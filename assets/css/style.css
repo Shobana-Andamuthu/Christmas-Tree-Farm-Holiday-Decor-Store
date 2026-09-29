@@ -522,6 +522,8 @@ h1, h2, h3, h4, .font-serif {
   text-decoration: none;
   flex-shrink: 0;
   transition: transform var(--transition-fast);
+  direction: ltr !important;
+  unicode-bidi: isolate !important;
 }
 
 .brand-logo:hover {
@@ -549,6 +551,9 @@ h1, h2, h3, h4, .font-serif {
   flex-direction: column;
   justify-content: center;
   line-height: 1;
+  direction: ltr !important;
+  unicode-bidi: isolate !important;
+  text-align: left !important;
 }
 
 .brand-name {
@@ -561,11 +566,16 @@ h1, h2, h3, h4, .font-serif {
   display: inline-flex;
   align-items: baseline;
   position: relative;
+  direction: ltr !important;
+  unicode-bidi: isolate !important;
+  text-align: left !important;
 }
 
 .brand-leaf-wrap {
   position: relative;
   display: inline-block;
+  direction: ltr !important;
+  unicode-bidi: isolate !important;
 }
 
 .brand-leaf-icon {
@@ -584,6 +594,8 @@ h1, h2, h3, h4, .font-serif {
   gap: 6px;
   margin-top: 3px;
   width: 100%;
+  direction: ltr !important;
+  unicode-bidi: isolate !important;
 }
 
 .tagline-rule {
@@ -600,6 +612,19 @@ h1, h2, h3, h4, .font-serif {
   text-transform: uppercase;
   color: var(--caramel-gold);
   white-space: nowrap;
+}
+
+/* RTL Brand Specifics */
+[dir="rtl"] .brand-logo,
+[dir="rtl"] .brand-text,
+[dir="rtl"] .brand-name,
+[dir="rtl"] .brand-leaf-wrap,
+[dir="rtl"] .brand-tagline,
+[dir="rtl"] .footer-brand,
+[dir="rtl"] .drawer-header .brand-logo {
+  direction: ltr !important;
+  unicode-bidi: isolate !important;
+  text-align: left !important;
 }
 
 /* Footer Brand Adaptations */
@@ -7841,29 +7866,72 @@ select:focus {
 
 .cart-coupon-form {
   display: flex;
-  gap: 8px;
+  flex-direction: column;
+  gap: 10px;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 .cart-coupon-input {
-  flex: 1;
-  padding: 10px 14px;
-  border-radius: var(--radius-md);
+  width: 100%;
+  height: 48px;
+  padding: 0 20px;
+  border-radius: var(--radius-full);
   border: 1px solid var(--border-color);
   background-color: var(--sage-bg);
-  font-size: 0.88rem;
+  font-size: 0.92rem;
   color: var(--text-main);
   outline: none;
+  box-sizing: border-box;
+  text-align: center;
+  transition: all var(--transition-fast);
+}
+
+.cart-coupon-input:focus {
+  border-color: var(--forest-green);
+  background-color: #FFFFFF;
 }
 
 [data-theme="dark"] .cart-coupon-input {
   background-color: rgba(255, 255, 255, 0.06);
 }
 
+[data-theme="dark"] .cart-coupon-input:focus {
+  background-color: rgba(255, 255, 255, 0.12);
+  border-color: var(--caramel-gold);
+}
+
+.cart-coupon-btn,
+.cart-coupon-form .btn {
+  width: 100% !important;
+  height: 48px !important;
+  padding: 0 20px !important;
+  font-size: 0.95rem !important;
+  font-weight: 700 !important;
+  border-radius: var(--radius-full) !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  text-align: center !important;
+  box-sizing: border-box !important;
+  margin: 0 !important;
+}
+
 .cart-checkout-btn {
-  width: 100%;
-  justify-content: center;
-  padding: 16px;
-  font-size: 1rem;
+  width: 100% !important;
+  height: 48px !important;
+  padding: 0 20px !important;
+  font-size: 0.95rem !important;
+  font-weight: 700 !important;
+  border-radius: var(--radius-full) !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  text-align: center !important;
+  box-sizing: border-box !important;
+  margin: 0 !important;
 }
 
 .cart-express-checkout {

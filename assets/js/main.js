@@ -77,8 +77,8 @@
 
 document.addEventListener('DOMContentLoaded', () => {
   // 1. Theme Management (Light / Dark)
-  const themeToggleBtns = document.querySelectorAll('#theme-toggle, .theme-toggle-btn, #theme-toggle-btn');
-  const rtlToggleBtns = document.querySelectorAll('#rtl-toggle, .rtl-toggle-btn, #rtl-toggle-btn');
+  const themeToggleBtns = document.querySelectorAll('#theme-toggle, .theme-toggle-btn, #theme-toggle-btn, #drawer-theme-toggle, [data-action="toggle-theme"]');
+  const rtlToggleBtns = document.querySelectorAll('#rtl-toggle, .rtl-toggle-btn, #rtl-toggle-btn, #drawer-rtl-toggle, [data-action="toggle-rtl"]');
   const hamburgerBtn = document.getElementById('hamburger-btn') || document.getElementById('hamburger-menu-btn');
   const mobileDrawer = document.getElementById('mobile-drawer');
   const drawerBackdrop = document.getElementById('drawer-backdrop');

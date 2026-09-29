@@ -197,17 +197,25 @@
           <div class="brand-name">Pinecrest Meadows</div>
         </div>
       </a>
-      <button class="drawer-close-btn" id="drawer-close-btn" aria-label="Close Mobile Menu">&times;</button>
+      <button class="drawer-close-btn" id="drawer-close-btn" aria-label="Close menu">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <line x1="18" y1="6" x2="6" y2="18"></line>
+          <line x1="6" y1="6" x2="18" y2="18"></line>
+        </svg>
+      </button>
     </div>
 
     <!-- Quick Action Icons in Drawer -->
     <div class="drawer-quick-actions">
-      <button class="nav-circle-btn" id="drawer-rtl-toggle" title="Switch RTL/LTR" aria-label="Toggle Direction">
+      <button class="nav-circle-btn rtl-toggle-btn" id="drawer-rtl-toggle" title="Switch RTL/LTR" aria-label="Toggle Direction">
         <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-          <path d="M4 8h16M4 8l4-4M4 8l4 4M20 16H4m16 0l-4-4m4 4l-4 4"></path>
+          <polyline points="16 3 21 8 16 13"></polyline>
+          <line x1="21" y1="8" x2="9" y2="8"></line>
+          <polyline points="8 21 3 16 8 11"></polyline>
+          <line x1="3" y1="16" x2="15" y2="16"></line>
         </svg>
       </button>
-      <button class="nav-circle-btn" id="drawer-theme-toggle" title="Switch Theme" aria-label="Toggle Theme">
+      <button class="nav-circle-btn theme-toggle-btn" id="drawer-theme-toggle" title="Switch Theme" aria-label="Toggle Theme">
         <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
           <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
         </svg>
