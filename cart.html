@@ -499,17 +499,19 @@
                 </div>
               </div>
 
-              <!-- Promo Code Input -->
-              <form class="cart-coupon-form" onsubmit="applyCoupon(event)">
-                <input type="text" class="cart-coupon-input" id="coupon-code" value="HOLIDAY15"
-                  placeholder="Promo code">
-                <button type="submit" class="btn btn-forest cart-coupon-btn">Apply</button>
-              </form>
+              <!-- Promo Code & Checkout Action Stack -->
+              <div class="cart-actions-stack">
+                <form class="cart-coupon-form" onsubmit="applyCoupon(event)">
+                  <input type="text" class="cart-coupon-input" id="coupon-code" value="HOLIDAY15"
+                    placeholder="Promo code">
+                  <button type="submit" class="btn btn-forest cart-coupon-btn">Apply</button>
+                </form>
 
-              <!-- Checkout Button -->
-              <button class="btn btn-caramel cart-checkout-btn" onclick="proceedToCheckout()">
-                <span>Proceed to Secure Checkout &rarr;</span>
-              </button>
+                <!-- Checkout Button -->
+                <button class="btn btn-caramel cart-checkout-btn" onclick="proceedToCheckout()">
+                  <span>Proceed to Secure Checkout &rarr;</span>
+                </button>
+              </div>
 
               <!-- Express Checkout Buttons -->
               <div class="cart-express-checkout">

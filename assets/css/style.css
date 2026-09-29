@@ -7775,7 +7775,6 @@ select:focus {
   box-shadow: var(--shadow-md);
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
   gap: 14px;
   box-sizing: border-box;
   height: 560px;
@@ -7797,6 +7796,7 @@ select:focus {
   flex-direction: column;
   gap: 12px;
   width: 100%;
+  margin-bottom: auto;
 }
 
 .cart-summary-row {
@@ -7864,29 +7864,40 @@ select:focus {
   align-items: center !important;
 }
 
+.cart-actions-stack {
+  display: flex !important;
+  flex-direction: column !important;
+  gap: 10px !important;
+  width: 100% !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  box-sizing: border-box !important;
+}
+
 .cart-coupon-form {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-  width: 100%;
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+  display: flex !important;
+  flex-direction: column !important;
+  gap: 10px !important;
+  width: 100% !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  box-sizing: border-box !important;
 }
 
 .cart-coupon-input {
-  width: 100%;
-  height: 48px;
-  padding: 0 20px;
-  border-radius: var(--radius-full);
-  border: 1px solid var(--border-color);
-  background-color: var(--sage-bg);
-  font-size: 0.92rem;
-  color: var(--text-main);
-  outline: none;
-  box-sizing: border-box;
-  text-align: center;
-  transition: all var(--transition-fast);
+  width: 100% !important;
+  height: 48px !important;
+  padding: 0 20px !important;
+  border-radius: var(--radius-full) !important;
+  border: 1px solid var(--border-color) !important;
+  background-color: var(--sage-bg) !important;
+  font-size: 0.92rem !important;
+  color: var(--text-main) !important;
+  outline: none !important;
+  box-sizing: border-box !important;
+  text-align: center !important;
+  transition: all var(--transition-fast) !important;
+  margin: 0 !important;
 }
 
 .cart-coupon-input:focus {
