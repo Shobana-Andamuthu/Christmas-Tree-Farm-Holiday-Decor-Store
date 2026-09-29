@@ -1,0 +1,928 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shopping Cart &amp; Checkout | Pinecrest Meadows Tree Farm</title>
+  <meta name="description" content="Review your holiday shopping cart, choose farm pickup or white-glove living room delivery, and complete your secure Christmas tree purchase.">
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg">
+
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+  <!-- Attractive Holiday Page Preloader -->
+  <div class="pm-page-loader" id="page-loader" aria-hidden="true">
+    <div class="pm-loader-particles">
+      <div class="pm-loader-particle"></div>
+      <div class="pm-loader-particle"></div>
+      <div class="pm-loader-particle"></div>
+      <div class="pm-loader-particle"></div>
+      <div class="pm-loader-particle"></div>
+    </div>
+    <div class="pm-loader-inner">
+      <div class="pm-loader-emblem">
+        <div class="pm-loader-ring"></div>
+        <div class="pm-loader-ring-inner"></div>
+        <div class="pm-loader-icon">
+          <svg viewBox="0 0 24 24" fill="currentColor">
+            <path d="M12 2L15 8H13L16 13H14L18 19H6L10 13H8L11 8H9L12 2Z"/>
+            <rect x="11" y="19" width="2" height="3" fill="#D4A017"/>
+            <polygon points="12,1 12.8,2.8 14.8,2.8 13.2,4 13.8,5.8 12,4.6 10.2,5.8 10.8,4 9.2,2.8 11.2,2.8" fill="#FFF3C4"/>
+          </svg>
+        </div>
+      </div>
+      <h2 class="pm-loader-title">Pinecrest Meadows</h2>
+      <p class="pm-loader-subtitle">Fresh Evergreen Harvest &bull; Est. 1984</p>
+      <div class="pm-loader-progress-track">
+        <div class="pm-loader-progress-bar"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ==========================================================================
+       SITE HEADER (Deep Evergreen Navbar with Icons)
+       ========================================================================== -->
+  <header class="site-header" id="site-header">
+    <div class="container">
+      <nav class="navbar" aria-label="Main Navigation">
+        
+        <!-- Left: Brand Logo -->
+        <a href="index.html" class="brand-logo" id="main-logo" aria-label="Pinecrest Meadows Tree Farm & Market">
+          <div class="brand-emblem" aria-hidden="true">
+            <svg width="42" height="42" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <defs>
+                <linearGradient id="treeGold" x1="0%" y1="0%" x2="100%" y2="100%">
+                  <stop offset="0%" stop-color="#F6D799" />
+                  <stop offset="50%" stop-color="#D4A359" />
+                  <stop offset="100%" stop-color="#A27129" />
+                </linearGradient>
+                <linearGradient id="hillGreen" x1="0%" y1="0%" x2="100%" y2="100%">
+                  <stop offset="0%" stop-color="#5B9760" />
+                  <stop offset="100%" stop-color="#245132" />
+                </linearGradient>
+              </defs>
+              <path d="M 6 30 A 18 18 0 1 1 42 30" stroke="url(#treeGold)" stroke-width="2.2" stroke-linecap="round" fill="none" />
+              <path d="M 18 7 L 13 15 L 23 15 Z" fill="url(#treeGold)" />
+              <path d="M 18 13 L 11 21 L 25 21 Z" fill="url(#treeGold)" />
+              <path d="M 18 19 L 9 28 L 27 28 Z" fill="url(#treeGold)" />
+              <rect x="16.5" y="28" width="3" height="3" fill="#A27129" />
+              <path d="M 31 15 L 27 20 L 35 20 Z" fill="url(#treeGold)" />
+              <path d="M 31 19 L 25 25 L 37 25 Z" fill="url(#treeGold)" />
+              <path d="M 31 23 L 24 30 L 38 30 Z" fill="url(#treeGold)" />
+              <rect x="30" y="30" width="2" height="2" fill="#A27129" />
+              <path d="M 4 32 C 14 30, 24 35, 44 32" stroke="url(#treeGold)" stroke-width="2" stroke-linecap="round" fill="none" />
+              <path d="M 6 36 C 16 34, 26 39, 42 36" stroke="url(#hillGreen)" stroke-width="1.8" stroke-linecap="round" fill="none" />
+              <path d="M 10 40 C 18 38, 28 42, 38 40" stroke="url(#hillGreen)" stroke-width="1.4" stroke-linecap="round" fill="none" />
+            </svg>
+          </div>
+          <div class="brand-text">
+            <div class="brand-name">
+              Pinecrest Meadow<span class="brand-leaf-wrap">s<svg class="brand-leaf-icon" viewBox="0 0 20 20" fill="currentColor"><path d="M3 17 C 8 16, 17 12, 17 3 C 10 4, 4 9, 3 17 Z M 7 13 C 11 9, 14 6, 14 6" fill="#78B159"/></svg></span>
+            </div>
+            <div class="brand-tagline">
+              <span class="tagline-rule"></span>
+              <span class="tagline-text">TREE FARM &amp; MARKET</span>
+              <span class="tagline-rule"></span>
+            </div>
+          </div>
+        </a>
+
+        <!-- Center: Nav Menu -->
+        <ul class="nav-menu" id="desktop-nav-menu">
+          <li class="nav-item nav-item-dropdown">
+            <a href="index.html" class="nav-link" id="nav-home-link" aria-haspopup="true" aria-expanded="false">
+              Home
+              <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"></polyline></svg>
+            </a>
+            <div class="dropdown-menu" aria-label="Home Pages Submenu">
+              <a href="index.html" class="dropdown-link">Home 1 (Farm &amp; Market)</a>
+              <a href="home-2.html" class="dropdown-link">Home 2 (Winter Lodge)</a>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a href="products.html" class="nav-link" id="nav-products-link">Products</a>
+          </li>
+          <li class="nav-item">
+            <a href="visit-farm.html" class="nav-link" id="nav-visit-link">Visit the Farm</a>
+          </li>
+          <li class="nav-item">
+            <a href="delivery-setup.html" class="nav-link" id="nav-delivery-link">Delivery &amp; Setup</a>
+          </li>
+          <li class="nav-item">
+            <a href="about.html" class="nav-link" id="nav-about-link">About</a>
+          </li>
+          <li class="nav-item">
+            <a href="contact.html" class="nav-link" id="nav-contact-link">Contact</a>
+          </li>
+        </ul>
+
+        <!-- Right: Actions (RTL, Theme, Wishlist, Cart, Login, Hamburger) -->
+        <div class="nav-actions">
+          
+          <!-- 1. RTL Toggle (⇄) -->
+          <button class="nav-circle-btn" id="rtl-toggle" title="Switch RTL/LTR" aria-label="Toggle Direction">
+            <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M4 8h16M4 8l4-4M4 8l4 4M20 16H4m16 0l-4-4m4 4l-4 4"></path>
+            </svg>
+          </button>
+
+          <!-- 2. Light / Dark Theme Toggle (🌙) -->
+          <button class="nav-circle-btn" id="theme-toggle" title="Switch Theme" aria-label="Toggle Theme">
+            <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+            </svg>
+          </button>
+
+          <!-- 3. Wishlist Button (♡ 5) -->
+          <a href="wishlist.html" class="nav-circle-btn" id="wishlist-btn" title="Saved Favorites" aria-label="View Wishlist">
+            <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
+            </svg>
+            <span class="nav-badge" id="wishlist-count-badge">5</span>
+          </a>
+
+          <!-- 4. Cart Button (🛍 3) -->
+          <a href="cart.html" class="nav-circle-btn active" id="cart-btn" title="View Basket" aria-label="View Shopping Basket">
+            <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path>
+              <line x1="3" y1="6" x2="21" y2="6"></line>
+              <path d="M16 10a4 4 0 0 1-8 0"></path>
+            </svg>
+            <span class="nav-badge cart-badge" id="cart-count-badge">3</span>
+          </a>
+
+          <!-- 5. Login Pill Button -->
+          <a href="login.html" class="nav-pill-btn nav-login-pill" id="nav-login-btn">
+            Login
+          </a>
+
+          <!-- Mobile Hamburger -->
+          <button class="hamburger-btn" id="hamburger-btn" aria-label="Toggle Mobile Menu" aria-expanded="false" aria-controls="mobile-drawer">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer Overlay -->
+  <div class="drawer-backdrop" id="drawer-backdrop"></div>
+
+  <!-- Mobile Navigation Drawer -->
+  <aside class="mobile-drawer" id="mobile-drawer" aria-label="Mobile Menu" aria-hidden="true">
+    <div class="drawer-header">
+      <a href="index.html" class="brand-logo" aria-label="Pinecrest Meadows">
+        <div class="brand-emblem" aria-hidden="true">
+          <svg width="34" height="34" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M 6 30 A 18 18 0 1 1 42 30" stroke="#D4A359" stroke-width="2.2" stroke-linecap="round" fill="none" />
+            <path d="M 18 7 L 13 15 L 23 15 Z" fill="#D4A359" />
+            <path d="M 18 13 L 11 21 L 25 21 Z" fill="#D4A359" />
+            <path d="M 18 19 L 9 28 L 27 28 Z" fill="#D4A359" />
+            <rect x="16.5" y="28" width="3" height="3" fill="#A27129" />
+            <path d="M 31 15 L 27 20 L 35 20 Z" fill="#D4A359" />
+            <path d="M 31 19 L 25 25 L 37 25 Z" fill="#D4A359" />
+            <path d="M 31 23 L 24 30 L 38 30 Z" fill="#D4A359" />
+            <rect x="30" y="30" width="2" height="2" fill="#A27129" />
+            <path d="M 4 32 C 14 30, 24 35, 44 32" stroke="#D4A359" stroke-width="2" stroke-linecap="round" fill="none" />
+            <path d="M 6 36 C 16 34, 26 39, 42 36" stroke="#245132" stroke-width="1.8" stroke-linecap="round" fill="none" />
+          </svg>
+        </div>
+        <div class="brand-text">
+          <div class="brand-name">Pinecrest Meadows</div>
+        </div>
+      </a>
+      <button class="drawer-close-btn" id="drawer-close-btn" aria-label="Close Mobile Menu">&times;</button>
+    </div>
+
+    <!-- Quick Action Icons in Drawer -->
+    <div class="drawer-quick-actions">
+      <button class="nav-circle-btn" id="drawer-rtl-toggle" title="Switch RTL/LTR" aria-label="Toggle Direction">
+        <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M4 8h16M4 8l4-4M4 8l4 4M20 16H4m16 0l-4-4m4 4l-4 4"></path>
+        </svg>
+      </button>
+      <button class="nav-circle-btn" id="drawer-theme-toggle" title="Switch Theme" aria-label="Toggle Theme">
+        <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+        </svg>
+      </button>
+      <a href="wishlist.html" class="nav-circle-btn" title="Saved Favorites" aria-label="View Wishlist">
+        <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
+        </svg>
+        <span class="nav-badge">5</span>
+      </a>
+      <a href="cart.html" class="nav-circle-btn" title="View Basket" aria-label="View Shopping Basket">
+        <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path>
+          <line x1="3" y1="6" x2="21" y2="6"></line>
+          <path d="M16 10a4 4 0 0 1-8 0"></path>
+        </svg>
+        <span class="nav-badge cart-badge">3</span>
+      </a>
+    </div>
+
+    <nav class="drawer-links">
+      <div class="drawer-link-group">
+        <span class="drawer-link">
+          Home
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"></polyline></svg>
+        </span>
+        <div class="drawer-sublinks">
+          <a href="index.html" class="drawer-sublink">Home 1 (Farm &amp; Market)</a>
+          <a href="home-2.html" class="drawer-sublink">Home 2 (Winter Lodge)</a>
+        </div>
+      </div>
+      <a href="products.html" class="drawer-link">Products</a>
+      <a href="visit-farm.html" class="drawer-link">Visit the Farm</a>
+      <a href="delivery-setup.html" class="drawer-link">Delivery &amp; Setup</a>
+      <a href="about.html" class="drawer-link">About</a>
+      <a href="contact.html" class="drawer-link">Contact</a>
+      <div style="display:flex; gap:10px; margin-top:10px; padding:4px 0;">
+        <a href="login.html" class="nav-pill-btn nav-login-pill" style="flex:1; text-align:center;">Login</a>
+        <a href="register.html" class="nav-pill-btn nav-signup-pill" style="flex:1; text-align:center;">Sign Up</a>
+      </div>
+    </nav>
+
+    <div class="drawer-footer">
+      <div style="font-size:0.8rem; color:var(--text-muted); text-align:center; padding: 4px 0;">
+        🌲 Open Daily 9 AM – 7 PM • 📞 (555) 789-2425
+      </div>
+    </div>
+  </aside>
+
+  <!-- Main Content Flow -->
+  <main id="main-content">
+
+    <!-- ==========================================================================
+         SECTION 1: HERO (Standardized Inner Page Height)
+         ========================================================================== -->
+    <section class="prod-hero-section page-hero-section" id="hero">
+      <img src="assets/images/products/products-hero.jpg" alt="Christmas tree harvest packaging at Pinecrest Meadows" class="prod-hero-bg">
+      <div class="prod-hero-overlay"></div>
+
+      <div class="container">
+        <div class="prod-hero-content">
+          <!-- Breadcrumbs -->
+          <div class="prod-breadcrumb">
+            <a href="index.html">Home</a>
+            <span class="prod-breadcrumb-sep">/</span>
+            <span>Shopping Cart</span>
+          </div>
+
+          <!-- Page Title -->
+          <h1 class="prod-hero-title">Your Holiday Cart</h1>
+
+          <!-- Page Subtitle -->
+          <p class="prod-hero-subtitle">
+            Review your harvest selections, customize delivery or farm pickup dates, and enjoy complimentary tree netting, straight trunk trimming, and holiday packing.
+          </p>
+
+          <!-- Badges Strip -->
+          <div class="prod-hero-badges">
+            <div class="prod-hero-badge">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+              </svg>
+              <span>100% Needle Freshness Guaranteed</span>
+            </div>
+            <div class="prod-hero-badge">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                <rect x="1" y="3" width="15" height="13"></rect>
+                <polygon points="16 8 20 8 23 11 23 16 16 16 16 8"></polygon>
+                <circle cx="5.5" cy="18.5" r="2.5"></circle>
+                <circle cx="18.5" cy="18.5" r="2.5"></circle>
+              </svg>
+              <span>White-Glove Delivery Qualified</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         SECTION 2: 2-COLUMN CART & CHECKOUT LAYOUT
+         ========================================================================== -->
+    <section class="prod-section bg-alt" id="cart-main-section">
+      <div class="container">
+        
+        <!-- Free Shipping Progress Banner -->
+        <div class="cart-free-shipping-bar">
+          <div class="cart-shipping-text">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#D4A359" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round" style="flex-shrink:0;">
+              <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
+            </svg>
+            <span>You unlocked <strong>FREE White-Glove Home Delivery</strong> on this order! ($150+ threshold reached)</span>
+          </div>
+          <div class="cart-shipping-progress-track">
+            <div class="cart-shipping-progress-fill" style="width: 100%;"></div>
+          </div>
+        </div>
+
+        <div class="cart-main-container">
+          
+          <!-- TOP ROW: Cart Products List (Scrollable) & Order Summary (Equal Height) -->
+          <div class="cart-top-grid">
+            
+            <!-- Left: Cart Items Box with Scroll -->
+            <div class="cart-items-box" id="cart-items-list">
+              
+              <!-- Item 1: Fraser Fir -->
+              <div class="cart-item-card" id="cart-item-1" data-price="115">
+                <div class="cart-item-img">
+                  <img src="assets/images/products/tree-fraser-fir.jpg" alt="Premium Fraser Fir">
+                </div>
+                <div class="cart-item-details">
+                  <a href="products.html" class="cart-item-title">Premium Fraser Fir (7–8 ft)</a>
+                  <div class="cart-item-meta">
+                    <strong>Size:</strong> 7–8 ft &bull; <strong>Prep:</strong> Straight Base Cut &amp; Netting Free
+                  </div>
+                  <div class="cart-item-unit-price">$115.00 each</div>
+                </div>
+                <div class="cart-item-controls">
+                  <div class="cart-qty-wrapper">
+                    <button class="cart-qty-btn" onclick="updateItemQty('cart-item-1', -1)">&minus;</button>
+                    <input type="text" class="cart-qty-input" value="1" readonly id="qty-cart-item-1">
+                    <button class="cart-qty-btn" onclick="updateItemQty('cart-item-1', 1)">&plus;</button>
+                  </div>
+                  <div class="cart-item-total" id="total-cart-item-1">$115.00</div>
+                  <button class="cart-item-remove" onclick="removeCartItem('cart-item-1')">
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="3 6 5 6 21 6"></polyline><path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"></path></svg>
+                    <span>Remove</span>
+                  </button>
+                </div>
+              </div>
+
+              <!-- Item 2: Mountain Berry Wreath -->
+              <div class="cart-item-card" id="cart-item-2" data-price="48">
+                <div class="cart-item-img">
+                  <img src="assets/images/products/wreath-berry.jpg" alt="Mountain Berry Wreath">
+                </div>
+                <div class="cart-item-details">
+                  <a href="products.html" class="cart-item-title">Mountain Berry Noble Wreath (24")</a>
+                  <div class="cart-item-meta">
+                    <strong>Style:</strong> Red Velvet Bow &bull; <strong>Fragrance:</strong> Mountain Juniper &amp; Cedar
+                  </div>
+                  <div class="cart-item-unit-price">$48.00 each</div>
+                </div>
+                <div class="cart-item-controls">
+                  <div class="cart-qty-wrapper">
+                    <button class="cart-qty-btn" onclick="updateItemQty('cart-item-2', -1)">&minus;</button>
+                    <input type="text" class="cart-qty-input" value="1" readonly id="qty-cart-item-2">
+                    <button class="cart-qty-btn" onclick="updateItemQty('cart-item-2', 1)">&plus;</button>
+                  </div>
+                  <div class="cart-item-total" id="total-cart-item-2">$48.00</div>
+                  <button class="cart-item-remove" onclick="removeCartItem('cart-item-2')">
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="3 6 5 6 21 6"></polyline><path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"></path></svg>
+                    <span>Remove</span>
+                  </button>
+                </div>
+              </div>
+
+              <!-- Item 3: Cast-Iron Stand -->
+              <div class="cart-item-card" id="cart-item-3" data-price="62">
+                <div class="cart-item-img">
+                  <img src="assets/images/products/decor-stand.jpg" alt="Cast Iron Reservoir Stand">
+                </div>
+                <div class="cart-item-details">
+                  <a href="products.html" class="cart-item-title">Cast-Iron Reservoir Stand (Large)</a>
+                  <div class="cart-item-meta">
+                    <strong>Capacity:</strong> 2.0 Gal Reservoir &bull; <strong>Fit:</strong> Up to 10ft trees
+                  </div>
+                  <div class="cart-item-unit-price">$62.00 each</div>
+                </div>
+                <div class="cart-item-controls">
+                  <div class="cart-qty-wrapper">
+                    <button class="cart-qty-btn" onclick="updateItemQty('cart-item-3', -1)">&minus;</button>
+                    <input type="text" class="cart-qty-input" value="1" readonly id="qty-cart-item-3">
+                    <button class="cart-qty-btn" onclick="updateItemQty('cart-item-3', 1)">&plus;</button>
+                  </div>
+                  <div class="cart-item-total" id="total-cart-item-3">$62.00</div>
+                  <button class="cart-item-remove" onclick="removeCartItem('cart-item-3')">
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="3 6 5 6 21 6"></polyline><path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"></path></svg>
+                    <span>Remove</span>
+                  </button>
+                </div>
+              </div>
+
+            </div>
+
+            <!-- Right: Order Summary & Checkout Card -->
+            <div class="cart-summary-card">
+              <h3 class="cart-summary-title">Order Summary (<span id="summary-items-count">3</span> items)</h3>
+              
+              <div class="cart-summary-rows">
+                <div class="cart-summary-row">
+                  <span>Items Subtotal</span>
+                  <strong id="summary-subtotal">$225.00</strong>
+                </div>
+                <div class="cart-summary-row highlight">
+                  <span>White-Glove Home Delivery</span>
+                  <strong id="summary-shipping">FREE ($25.00 Value)</strong>
+                </div>
+                <div class="cart-summary-row">
+                  <span>Fresh Tree Netting &amp; Sizing</span>
+                  <strong>FREE</strong>
+                </div>
+                <div class="cart-summary-row highlight" id="discount-row" style="display: flex;">
+                  <span>Promo Discount (<code>HOLIDAY15</code>)</span>
+                  <strong id="summary-discount">-$15.00</strong>
+                </div>
+                <div class="cart-summary-row">
+                  <span>Estimated Sales Tax (Oregon 0%)</span>
+                  <strong>$0.00</strong>
+                </div>
+                <div class="cart-summary-row total-row">
+                  <span>Final Total</span>
+                  <strong id="summary-total" style="color: var(--caramel-gold);">$210.00</strong>
+                </div>
+              </div>
+
+              <!-- Promo Code Input -->
+              <form class="cart-coupon-form" onsubmit="applyCoupon(event)">
+                <input type="text" class="cart-coupon-input" id="coupon-code" value="HOLIDAY15" placeholder="Promo code">
+                <button type="submit" class="btn btn-forest btn-sm" style="flex-shrink: 0; min-width: 80px;">Apply</button>
+              </form>
+
+              <!-- Checkout Button -->
+              <button class="btn btn-caramel cart-checkout-btn" onclick="proceedToCheckout()">
+                <span>Proceed to Secure Checkout &rarr;</span>
+              </button>
+
+              <!-- Express Checkout Buttons -->
+              <div class="cart-express-checkout">
+                <button class="express-btn" onclick="showToast('Connecting to Apple Pay...')">
+                  <span style="font-size: 1.1rem;"></span> <span>Apple Pay</span>
+                </button>
+                <button class="express-btn" onclick="showToast('Connecting to Google Pay...')">
+                  <strong style="color: #4285F4;">G</strong> <span>Pay</span>
+                </button>
+                <button class="express-btn" onclick="showToast('Connecting to PayPal...')">
+                  <span style="color: #0079C1; font-weight: 800;">P</span><span>ayPal</span>
+                </button>
+              </div>
+
+            </div>
+
+          </div>
+
+          <!-- BOTTOM SECTION: Fulfillment & Delivery Method (Full Row Width Below) -->
+          <div class="cart-delivery-box">
+            <h3 class="cart-delivery-title">Choose Fulfillment Option</h3>
+            
+            <div class="cart-fulfillment-options">
+              <label class="cart-fulfillment-label active" id="label-delivery" onclick="setFulfillment('delivery')">
+                <input type="radio" name="fulfillment" value="delivery" checked class="cart-fulfillment-radio">
+                <div>
+                  <strong style="display: flex; align-items: center; gap: 6px; font-size: 0.92rem; color: var(--text-heading); margin-bottom: 3px;">
+                    <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="#D4A359" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round" style="flex-shrink:0;">
+                      <rect x="1" y="3" width="15" height="13"></rect>
+                      <polygon points="16 8 20 8 23 11 23 16 16 16 16 8"></polygon>
+                      <circle cx="5.5" cy="18.5" r="2.5"></circle>
+                      <circle cx="18.5" cy="18.5" r="2.5"></circle>
+                    </svg>
+                    White-Glove Home Delivery
+                  </strong>
+                  <span style="font-size: 0.8rem; color: var(--text-muted); line-height: 1.4; display: block;">Room-of-choice doorstep setup &amp; stand mounting included. FREE on this order.</span>
+                </div>
+              </label>
+
+              <label class="cart-fulfillment-label" id="label-pickup" onclick="setFulfillment('pickup')">
+                <input type="radio" name="fulfillment" value="pickup" class="cart-fulfillment-radio">
+                <div>
+                  <strong style="display: flex; align-items: center; gap: 6px; font-size: 0.92rem; color: var(--text-heading); margin-bottom: 3px;">
+                    <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="#D4A359" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round" style="flex-shrink:0;">
+                      <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+                      <polyline points="9 22 9 12 15 12 15 22"></polyline>
+                    </svg>
+                    Farm Barn Pickup (Free)
+                  </strong>
+                  <span style="font-size: 0.8rem; color: var(--text-muted); line-height: 1.4; display: block;">Freshly tagged and netted, waiting for you at the Welcome Lodge within 2 hours.</span>
+                </div>
+              </label>
+            </div>
+
+            <!-- Date & Time Picker -->
+            <div class="cart-datetime-row">
+              <div class="contact-form-group">
+                <label class="contact-label">Preferred Date *</label>
+                <input type="date" class="contact-input" value="2026-12-05" style="padding: 10px 14px;">
+              </div>
+              <div class="contact-form-group">
+                <label class="contact-label">Preferred Time Window *</label>
+                <select class="contact-select" style="padding: 10px 14px;">
+                  <option value="morning">Morning (9:00 AM – 1:00 PM)</option>
+                  <option value="afternoon" selected>Afternoon (1:00 PM – 5:00 PM)</option>
+                  <option value="twilight">Twilight Delivery (5:00 PM – 8:00 PM)</option>
+                </select>
+              </div>
+            </div>
+
+            <!-- Delivery Instructions -->
+            <div class="contact-form-group" style="margin-top: 14px;">
+              <label class="contact-label">Special Delivery / Trunk Tapering Notes</label>
+              <input type="text" class="contact-input" placeholder="e.g. Leave on covered back patio or text upon arrival at gate #2">
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         SECTION 3: ADD FARM ESSENTIALS (Upsell Carousel)
+         ========================================================================== -->
+    <section class="prod-section" id="upsell">
+      <div class="container">
+        <div class="section-header">
+          <span class="eyebrow">Farm Add-Ons</span>
+          <h2 class="section-title">Add Essential Tree Care Supplies</h2>
+          <p class="section-subtitle">
+            Extend needle freshness and keep your home glowing with arborist-recommended holiday accessories.
+          </p>
+        </div>
+
+        <div class="wishlist-grid">
+          <div class="wishlist-card">
+            <div class="wishlist-media">
+              <img src="assets/images/products/decor-candle.jpg" alt="Soy Pine Scented Candle" loading="lazy">
+            </div>
+            <div class="wishlist-body">
+              <div class="wishlist-tag">Farm Kitchen</div>
+              <h3 class="wishlist-title"><a href="products.html">Winter Fir &amp; Clove Soy Candle</a></h3>
+              <div class="wishlist-price-row">
+                <div class="wishlist-price">$18.00</div>
+                <div class="wishlist-stock">✓ 45-Hour Burn</div>
+              </div>
+              <button class="btn btn-forest btn-sm wishlist-btn-add" onclick="addUpsellItem('Winter Fir Soy Candle', 18)">
+                <span>+ Add to Cart</span>
+              </button>
+            </div>
+          </div>
+
+          <div class="wishlist-card">
+            <div class="wishlist-media">
+              <img src="assets/images/products/decor-lights.jpg" alt="Warm Glow LED Micro Fairy Lights" loading="lazy">
+            </div>
+            <div class="wishlist-body">
+              <div class="wishlist-tag">Lighting</div>
+              <h3 class="wishlist-title"><a href="products.html">Warm Glow LED Fairy Lights (500ct)</a></h3>
+              <div class="wishlist-price-row">
+                <div class="wishlist-price">$24.00</div>
+                <div class="wishlist-stock">✓ 8 Light Modes</div>
+              </div>
+              <button class="btn btn-forest btn-sm wishlist-btn-add" onclick="addUpsellItem('Warm Glow LED Fairy Lights', 24)">
+                <span>+ Add to Cart</span>
+              </button>
+            </div>
+          </div>
+
+          <div class="wishlist-card">
+            <div class="wishlist-media">
+              <img src="assets/images/products/decor-skirt.jpg" alt="Quilted Natural Linen Tree Skirt" loading="lazy">
+            </div>
+            <div class="wishlist-body">
+              <div class="wishlist-tag">Accessories</div>
+              <h3 class="wishlist-title"><a href="products.html">Quilted Linen Tree Skirt (48")</a></h3>
+              <div class="wishlist-price-row">
+                <div class="wishlist-price">$36.00</div>
+                <div class="wishlist-stock">✓ Hand-Stitched</div>
+              </div>
+              <button class="btn btn-forest btn-sm wishlist-btn-add" onclick="addUpsellItem('Quilted Linen Tree Skirt', 36)">
+                <span>+ Add to Cart</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         SECTION 4: FINAL CTA
+         ========================================================================== -->
+    <section class="prod-shopping-cta-section" id="support">
+      <img src="assets/images/contact/contact-cta-stroll.jpg" alt="Family carrying tree at farm" class="prod-cta-bg-image">
+      <div class="prod-cta-overlay"></div>
+
+      <div class="container">
+        <div class="prod-cta-inner" style="grid-template-columns: 1fr; text-align: center; max-width: 780px; margin: 0 auto;">
+          <div>
+            <span class="eyebrow" style="color: #F8D38D; font-weight: 800; letter-spacing: 0.1em; text-transform: uppercase; text-shadow: 0 1px 3px rgba(0,0,0,0.5);">Need Assistance?</span>
+            <h2 class="prod-cta-title" style="margin-bottom: 16px;">Have Questions About Delivery or Sizing?</h2>
+            <p class="prod-cta-desc" style="margin-bottom: 32px;">
+              Our farm arborists are standing by 7 days a week to assist with commercial quotes, custom wreath orders, or delivery scheduling.
+            </p>
+
+            <div style="display: flex; justify-content: center; gap: 16px; flex-wrap: wrap;">
+              <a href="tel:8005557463" class="btn btn-caramel btn-arrow" style="padding: 14px 32px;">
+                <span>Call Hotline (800) 555-PINE</span>
+                <span class="btn-arrow">&rarr;</span>
+              </a>
+              <a href="contact.html" class="btn btn-outline" style="padding: 14px 32px;">
+                <span>Contact Farm Support</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ==========================================================================
+       FOOTER
+       ========================================================================== -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-col footer-col-brand">
+          <a href="index.html" class="brand-logo footer-logo" style="margin-bottom:12px;"
+            aria-label="Pinecrest Meadows">
+            <div class="brand-emblem" aria-hidden="true">
+              <svg width="40" height="40" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M 6 30 A 18 18 0 1 1 42 30" stroke="#D4A359" stroke-width="2.2" stroke-linecap="round"
+                  fill="none" />
+                <path d="M 18 7 L 13 15 L 23 15 Z" fill="#D4A359" />
+                <path d="M 18 13 L 11 21 L 25 21 Z" fill="#D4A359" />
+                <path d="M 18 19 L 9 28 L 27 28 Z" fill="#D4A359" />
+                <rect x="16.5" y="28" width="3" height="3" fill="#A27129" />
+                <path d="M 31 15 L 27 20 L 35 20 Z" fill="#D4A359" />
+                <path d="M 31 19 L 25 25 L 37 25 Z" fill="#D4A359" />
+                <path d="M 31 23 L 24 30 L 38 30 Z" fill="#D4A359" />
+                <rect x="30" y="30" width="2" height="2" fill="#A27129" />
+                <path d="M 4 32 C 14 30, 24 35, 44 32" stroke="#D4A359" stroke-width="2" stroke-linecap="round"
+                  fill="none" />
+                <path d="M 6 36 C 16 34, 26 39, 42 36" stroke="#245132" stroke-width="1.8" stroke-linecap="round"
+                  fill="none" />
+              </svg>
+            </div>
+            <div class="brand-text">
+              <div class="brand-name">
+                Pinecrest Meadow<span class="brand-leaf-wrap">s<svg class="brand-leaf-icon" viewBox="0 0 20 20"
+                    fill="currentColor">
+                    <path d="M3 17 C 8 16, 17 12, 17 3 C 10 4, 4 9, 3 17 Z M 7 13 C 11 9, 14 6, 14 6" fill="#78B159" />
+                  </svg></span>
+              </div>
+              <div class="brand-tagline">
+                <span class="tagline-rule"></span>
+                <span class="tagline-text">TREE FARM &amp; MARKET</span>
+                <span class="tagline-rule"></span>
+              </div>
+            </div>
+          </a>
+          <p class="footer-desc">
+            Cultivating holiday memories since 1984. Sustainably grown mountain evergreens, handmade wreaths, and
+            festive seasonal cheer.
+          </p>
+          <div class="footer-socials">
+            <a href="#instagram" class="social-icon" aria-label="Follow us on Instagram">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round">
+                <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+              </svg>
+            </a>
+            <a href="#facebook" class="social-icon" aria-label="Follow us on Facebook">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round">
+                <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
+              </svg>
+            </a>
+            <a href="#pinterest" class="social-icon" aria-label="Follow us on Pinterest">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round">
+                <line x1="12" y1="5" x2="12" y2="19"></line>
+                <polyline points="19 12 12 19 5 12"></polyline>
+              </svg>
+            </a>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h4 class="footer-col-title">Shop Collection</h4>
+          <ul class="footer-links">
+            <li><a href="products.html#trees">Fresh Christmas Trees</a></li>
+            <li><a href="products.html#wreaths">Botanical Wreaths</a></li>
+            <li><a href="products.html#wreaths">Cascading Garlands</a></li>
+            <li><a href="products.html#decor">Heirloom Ornaments</a></li>
+            <li><a href="products.html#decor">Cast Iron Tree Stands</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4 class="footer-col-title">Farm Experience</h4>
+          <ul class="footer-links">
+            <li><a href="visit-farm.html#experience">Cut-Your-Own Harvest</a></li>
+            <li><a href="visit-farm.html#hours">Seasonal Opening Hours</a></li>
+            <li><a href="visit-farm.html#expect">Wagon Rides &amp; Bonfires</a></li>
+            <li><a href="home-2.html">Holiday Lodge Boutique</a></li>
+            <li><a href="delivery-setup.html">Delivery &amp; Setup</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4 class="footer-col-title">Farm Hours &amp; Location</h4>
+          <p class="footer-contact-item">
+            <strong>Pinecrest Meadows Farm</strong><br>
+            742 Evergreen Valley Way<br>
+            Cascades, OR 97401
+          </p>
+          <p class="footer-contact-item" style="margin-top: 10px;">
+            <strong>Opening Hours:</strong><br>
+            Mon – Sun: 9:00 AM – 7:00 PM<br>
+            Phone: (800) 555-PINE
+          </p>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 Pinecrest Meadows Tree Farm &amp; Market. All rights reserved.</p>
+        <div class="footer-bottom-links">
+          <a href="contact.html">Privacy Policy</a>
+          <a href="contact.html">Terms of Service</a>
+          <a href="delivery-setup.html">Shipping &amp; Delivery</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Back to Top Floating Button -->
+  <button class="back-to-top" id="back-to-top" aria-label="Scroll back to top" title="Back to top">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+      stroke-linecap="round" stroke-linejoin="round">
+      <line x1="12" y1="19" x2="12" y2="5"></line>
+      <polyline points="5 12 12 5 19 12"></polyline>
+    </svg>
+  </button>
+
+  <!-- Notification Toast Container -->
+  <div id="toast-container"></div>
+
+  <!-- Scripts -->
+  <script src="assets/js/main.js"></script>
+  <script>
+    let discount = 15;
+
+    function renderCartPage() {
+      const list = document.getElementById('cart-items-list');
+      if (!list) return;
+      const cart = window.getCart();
+
+      if (!cart || cart.length === 0) {
+        list.innerHTML = `
+          <div style="text-align: center; padding: 60px 20px;">
+            <div style="margin-bottom: 16px; display: flex; justify-content: center;">
+              <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="#D4A359" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path>
+                <line x1="3" y1="6" x2="21" y2="6"></line>
+                <path d="M16 10a4 4 0 0 1-8 0"></path>
+              </svg>
+            </div>
+            <h3 style="font-family: var(--font-heading); font-size: 1.6rem; color: var(--text-heading); margin-bottom: 8px;">Your Shopping Cart is Empty</h3>
+            <p style="color: var(--text-muted); margin-bottom: 24px;">Explore our sustainably harvested trees and handcrafted holiday wreaths.</p>
+            <a href="products.html" class="btn btn-caramel">Browse Products &rarr;</a>
+          </div>
+        `;
+        recalculateCart();
+        return;
+      }
+
+      let html = '';
+      cart.forEach((item, index) => {
+        const itemTotal = ((item.price || 0) * (item.qty || 1)).toFixed(2);
+        html += `
+          <div class="cart-item-card" id="cart-item-${index}" data-index="${index}" data-price="${item.price}">
+            <div class="cart-item-img">
+              <img src="${item.img || 'assets/images/products/tree-fraser-fir.jpg'}" alt="${item.title}" onerror="this.src='assets/images/products/tree-fraser-fir.jpg'">
+            </div>
+            <div class="cart-item-details">
+              <a href="products.html" class="cart-item-title">${item.title}</a>
+              <div class="cart-item-meta">${item.meta || 'Size: 7–8 ft • Fresh Cut & Netting Free'}</div>
+              <div class="cart-item-unit-price">$${(item.price || 0).toFixed(2)} each</div>
+            </div>
+            <div class="cart-item-controls">
+              <div class="cart-qty-wrapper">
+                <button class="cart-qty-btn" onclick="updateItemQty(${index}, -1)">&minus;</button>
+                <input type="text" class="cart-qty-input" value="${item.qty || 1}" readonly id="qty-${index}">
+                <button class="cart-qty-btn" onclick="updateItemQty(${index}, 1)">&plus;</button>
+              </div>
+              <div class="cart-item-total" id="total-${index}">$${itemTotal}</div>
+              <button class="cart-item-remove" onclick="removeCartItem(${index})">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="3 6 5 6 21 6"></polyline><path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"></path></svg>
+                <span>Remove</span>
+              </button>
+            </div>
+          </div>
+        `;
+      });
+      list.innerHTML = html;
+      recalculateCart();
+    }
+
+    window.renderCartPage = renderCartPage;
+
+    function updateItemQty(index, change) {
+      const cart = window.getCart();
+      if (!cart[index]) return;
+      cart[index].qty = (cart[index].qty || 1) + change;
+      if (cart[index].qty <= 0) {
+        cart.splice(index, 1);
+        showToast('Item removed from cart.');
+      }
+      window.saveCart(cart);
+      renderCartPage();
+    }
+
+    function removeCartItem(index) {
+      const cart = window.getCart();
+      if (!cart[index]) return;
+      const title = cart[index].title || 'Item';
+      cart.splice(index, 1);
+      window.saveCart(cart);
+      showToast(`${title} removed from cart.`);
+      renderCartPage();
+    }
+
+    function recalculateCart() {
+      const cart = window.getCart();
+      const count = cart.reduce((sum, item) => sum + (parseInt(item.qty) || 1), 0);
+      const subtotal = cart.reduce((sum, item) => sum + ((item.price || 0) * (parseInt(item.qty) || 1)), 0);
+
+      const subtotalEl = document.getElementById('summary-subtotal');
+      const totalEl = document.getElementById('summary-total');
+      const countEl = document.getElementById('summary-items-count');
+
+      if (countEl) countEl.textContent = count;
+      if (subtotalEl) subtotalEl.textContent = '$' + subtotal.toFixed(2);
+
+      const finalTotal = Math.max(0, subtotal - discount);
+      if (totalEl) totalEl.textContent = '$' + finalTotal.toFixed(2);
+    }
+
+    let currentFulfillment = 'delivery';
+    function setFulfillment(type) {
+      if (currentFulfillment === type) return;
+      currentFulfillment = type;
+      const delLabel = document.getElementById('label-delivery');
+      const pickLabel = document.getElementById('label-pickup');
+      if (delLabel) delLabel.classList.toggle('active', type === 'delivery');
+      if (pickLabel) pickLabel.classList.toggle('active', type === 'pickup');
+      
+      const delRadio = document.querySelector('input[value="delivery"]');
+      const pickRadio = document.querySelector('input[value="pickup"]');
+      if (delRadio) delRadio.checked = (type === 'delivery');
+      if (pickRadio) pickRadio.checked = (type === 'pickup');
+
+      const shipEl = document.getElementById('summary-shipping');
+      if (shipEl) {
+        shipEl.textContent = type === 'delivery' ? 'FREE ($25.00 Value)' : 'FREE (Farm Pickup)';
+      }
+      showToast('Fulfillment updated to: ' + (type === 'delivery' ? 'White-Glove Home Delivery' : 'Farm Pickup'));
+    }
+
+    function applyCoupon(e) {
+      e.preventDefault();
+      const code = document.getElementById('coupon-code').value.trim().toUpperCase();
+      if (code === 'HOLIDAY15') {
+        discount = 15;
+        document.getElementById('discount-row').style.display = 'flex';
+        document.getElementById('summary-discount').textContent = '-$15.00';
+        recalculateCart();
+        showToast('Promo code HOLIDAY15 applied: $15 OFF!');
+      } else if (code === 'FREEDELIVERY') {
+        discount = 0;
+        showToast('Free White-Glove delivery confirmed on this order!');
+      } else if (code) {
+        showToast('Invalid promo code. Use HOLIDAY15 for $15 off!');
+      }
+    }
+
+    function addUpsellItem(name, price) {
+      let img = 'assets/images/products/decor-candle.jpg';
+      if (name.includes('Lights')) img = 'assets/images/products/decor-lights.jpg';
+      if (name.includes('Skirt')) img = 'assets/images/products/decor-skirt.jpg';
+      window.addToCart(name, price, img, 'Farm Add-On Accessory');
+    }
+
+    function proceedToCheckout() {
+      showToast('Proceeding to 256-Bit SSL Secure Gateway...');
+      setTimeout(() => {
+        alert('Thank you for ordering with Pinecrest Meadows! Your order confirmation #PM-8942 has been placed and receipt emailed.');
+      }, 800);
+    }
+
+    // Render cart on load
+    document.addEventListener('DOMContentLoaded', () => {
+      renderCartPage();
+    });
+  </script>
+</body>
+</html>

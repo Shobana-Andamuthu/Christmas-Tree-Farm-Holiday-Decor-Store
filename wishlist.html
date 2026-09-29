@@ -1,0 +1,840 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Holiday Wishlist | Pinecrest Meadows Tree Farm</title>
+  <meta name="description" content="View and manage your saved Christmas trees, handcrafted wreaths, and holiday accents. Reserve your favorite trees for farm harvest or white-glove home delivery.">
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg">
+
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+  <!-- Attractive Holiday Page Preloader -->
+  <div class="pm-page-loader" id="page-loader" aria-hidden="true">
+    <div class="pm-loader-particles">
+      <div class="pm-loader-particle"></div>
+      <div class="pm-loader-particle"></div>
+      <div class="pm-loader-particle"></div>
+      <div class="pm-loader-particle"></div>
+      <div class="pm-loader-particle"></div>
+    </div>
+    <div class="pm-loader-inner">
+      <div class="pm-loader-emblem">
+        <div class="pm-loader-ring"></div>
+        <div class="pm-loader-ring-inner"></div>
+        <div class="pm-loader-icon">
+          <svg viewBox="0 0 24 24" fill="currentColor">
+            <path d="M12 2L15 8H13L16 13H14L18 19H6L10 13H8L11 8H9L12 2Z"/>
+            <rect x="11" y="19" width="2" height="3" fill="#D4A017"/>
+            <polygon points="12,1 12.8,2.8 14.8,2.8 13.2,4 13.8,5.8 12,4.6 10.2,5.8 10.8,4 9.2,2.8 11.2,2.8" fill="#FFF3C4"/>
+          </svg>
+        </div>
+      </div>
+      <h2 class="pm-loader-title">Pinecrest Meadows</h2>
+      <p class="pm-loader-subtitle">Fresh Evergreen Harvest &bull; Est. 1984</p>
+      <div class="pm-loader-progress-track">
+        <div class="pm-loader-progress-bar"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ==========================================================================
+       SITE HEADER (Deep Evergreen Navbar with Icons)
+       ========================================================================== -->
+  <header class="site-header" id="site-header">
+    <div class="container">
+      <nav class="navbar" aria-label="Main Navigation">
+        
+        <!-- Left: Brand Logo -->
+        <a href="index.html" class="brand-logo" id="main-logo" aria-label="Pinecrest Meadows Tree Farm & Market">
+          <div class="brand-emblem" aria-hidden="true">
+            <svg width="42" height="42" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <defs>
+                <linearGradient id="treeGold" x1="0%" y1="0%" x2="100%" y2="100%">
+                  <stop offset="0%" stop-color="#F6D799" />
+                  <stop offset="50%" stop-color="#D4A359" />
+                  <stop offset="100%" stop-color="#A27129" />
+                </linearGradient>
+                <linearGradient id="hillGreen" x1="0%" y1="0%" x2="100%" y2="100%">
+                  <stop offset="0%" stop-color="#5B9760" />
+                  <stop offset="100%" stop-color="#245132" />
+                </linearGradient>
+              </defs>
+              <path d="M 6 30 A 18 18 0 1 1 42 30" stroke="url(#treeGold)" stroke-width="2.2" stroke-linecap="round" fill="none" />
+              <path d="M 18 7 L 13 15 L 23 15 Z" fill="url(#treeGold)" />
+              <path d="M 18 13 L 11 21 L 25 21 Z" fill="url(#treeGold)" />
+              <path d="M 18 19 L 9 28 L 27 28 Z" fill="url(#treeGold)" />
+              <rect x="16.5" y="28" width="3" height="3" fill="#A27129" />
+              <path d="M 31 15 L 27 20 L 35 20 Z" fill="url(#treeGold)" />
+              <path d="M 31 19 L 25 25 L 37 25 Z" fill="url(#treeGold)" />
+              <path d="M 31 23 L 24 30 L 38 30 Z" fill="url(#treeGold)" />
+              <rect x="30" y="30" width="2" height="2" fill="#A27129" />
+              <path d="M 4 32 C 14 30, 24 35, 44 32" stroke="url(#treeGold)" stroke-width="2" stroke-linecap="round" fill="none" />
+              <path d="M 6 36 C 16 34, 26 39, 42 36" stroke="url(#hillGreen)" stroke-width="1.8" stroke-linecap="round" fill="none" />
+              <path d="M 10 40 C 18 38, 28 42, 38 40" stroke="url(#hillGreen)" stroke-width="1.4" stroke-linecap="round" fill="none" />
+            </svg>
+          </div>
+          <div class="brand-text">
+            <div class="brand-name">
+              Pinecrest Meadow<span class="brand-leaf-wrap">s<svg class="brand-leaf-icon" viewBox="0 0 20 20" fill="currentColor"><path d="M3 17 C 8 16, 17 12, 17 3 C 10 4, 4 9, 3 17 Z M 7 13 C 11 9, 14 6, 14 6" fill="#78B159"/></svg></span>
+            </div>
+            <div class="brand-tagline">
+              <span class="tagline-rule"></span>
+              <span class="tagline-text">TREE FARM &amp; MARKET</span>
+              <span class="tagline-rule"></span>
+            </div>
+          </div>
+        </a>
+
+        <!-- Center: Nav Menu -->
+        <ul class="nav-menu" id="desktop-nav-menu">
+          <li class="nav-item nav-item-dropdown">
+            <a href="index.html" class="nav-link" id="nav-home-link" aria-haspopup="true" aria-expanded="false">
+              Home
+              <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"></polyline></svg>
+            </a>
+            <div class="dropdown-menu" aria-label="Home Pages Submenu">
+              <a href="index.html" class="dropdown-link">Home 1 (Farm &amp; Market)</a>
+              <a href="home-2.html" class="dropdown-link">Home 2 (Winter Lodge)</a>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a href="products.html" class="nav-link" id="nav-products-link">Products</a>
+          </li>
+          <li class="nav-item">
+            <a href="visit-farm.html" class="nav-link" id="nav-visit-link">Visit the Farm</a>
+          </li>
+          <li class="nav-item">
+            <a href="delivery-setup.html" class="nav-link" id="nav-delivery-link">Delivery &amp; Setup</a>
+          </li>
+          <li class="nav-item">
+            <a href="about.html" class="nav-link" id="nav-about-link">About</a>
+          </li>
+          <li class="nav-item">
+            <a href="contact.html" class="nav-link" id="nav-contact-link">Contact</a>
+          </li>
+        </ul>
+
+        <!-- Right: Actions (RTL, Theme, Wishlist, Cart, Login, Hamburger) -->
+        <div class="nav-actions">
+          
+          <!-- 1. RTL Toggle (⇄) -->
+          <button class="nav-circle-btn" id="rtl-toggle" title="Switch RTL/LTR" aria-label="Toggle Direction">
+            <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M4 8h16M4 8l4-4M4 8l4 4M20 16H4m16 0l-4-4m4 4l-4 4"></path>
+            </svg>
+          </button>
+
+          <!-- 2. Light / Dark Theme Toggle (🌙) -->
+          <button class="nav-circle-btn" id="theme-toggle" title="Switch Theme" aria-label="Toggle Theme">
+            <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+            </svg>
+          </button>
+
+          <!-- 3. Wishlist Button (♡ 5) -->
+          <a href="wishlist.html" class="nav-circle-btn active" id="wishlist-btn" title="Saved Favorites" aria-label="View Wishlist">
+            <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
+            </svg>
+            <span class="nav-badge" id="wishlist-count-badge">5</span>
+          </a>
+
+          <!-- 4. Cart Button (🛍 3) -->
+          <a href="cart.html" class="nav-circle-btn" id="cart-btn" title="View Basket" aria-label="View Shopping Basket">
+            <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path>
+              <line x1="3" y1="6" x2="21" y2="6"></line>
+              <path d="M16 10a4 4 0 0 1-8 0"></path>
+            </svg>
+            <span class="nav-badge cart-badge" id="cart-count-badge">3</span>
+          </a>
+
+          <!-- 5. Login Pill Button -->
+          <a href="login.html" class="nav-pill-btn nav-login-pill" id="nav-login-btn">
+            Login
+          </a>
+
+          <!-- Mobile Hamburger -->
+          <button class="hamburger-btn" id="hamburger-btn" aria-label="Toggle Mobile Menu" aria-expanded="false" aria-controls="mobile-drawer">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer Overlay -->
+  <div class="drawer-backdrop" id="drawer-backdrop"></div>
+
+  <!-- Mobile Navigation Drawer -->
+  <aside class="mobile-drawer" id="mobile-drawer" aria-label="Mobile Menu" aria-hidden="true">
+    <div class="drawer-header">
+      <a href="index.html" class="brand-logo" aria-label="Pinecrest Meadows">
+        <div class="brand-emblem" aria-hidden="true">
+          <svg width="34" height="34" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M 6 30 A 18 18 0 1 1 42 30" stroke="#D4A359" stroke-width="2.2" stroke-linecap="round" fill="none" />
+            <path d="M 18 7 L 13 15 L 23 15 Z" fill="#D4A359" />
+            <path d="M 18 13 L 11 21 L 25 21 Z" fill="#D4A359" />
+            <path d="M 18 19 L 9 28 L 27 28 Z" fill="#D4A359" />
+            <rect x="16.5" y="28" width="3" height="3" fill="#A27129" />
+            <path d="M 31 15 L 27 20 L 35 20 Z" fill="#D4A359" />
+            <path d="M 31 19 L 25 25 L 37 25 Z" fill="#D4A359" />
+            <path d="M 31 23 L 24 30 L 38 30 Z" fill="#D4A359" />
+            <rect x="30" y="30" width="2" height="2" fill="#A27129" />
+            <path d="M 4 32 C 14 30, 24 35, 44 32" stroke="#D4A359" stroke-width="2" stroke-linecap="round" fill="none" />
+            <path d="M 6 36 C 16 34, 26 39, 42 36" stroke="#245132" stroke-width="1.8" stroke-linecap="round" fill="none" />
+          </svg>
+        </div>
+        <div class="brand-text">
+          <div class="brand-name">Pinecrest Meadows</div>
+        </div>
+      </a>
+      <button class="drawer-close-btn" id="drawer-close-btn" aria-label="Close Mobile Menu">&times;</button>
+    </div>
+
+    <!-- Quick Action Icons in Drawer -->
+    <div class="drawer-quick-actions">
+      <button class="nav-circle-btn" id="drawer-rtl-toggle" title="Switch RTL/LTR" aria-label="Toggle Direction">
+        <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M4 8h16M4 8l4-4M4 8l4 4M20 16H4m16 0l-4-4m4 4l-4 4"></path>
+        </svg>
+      </button>
+      <button class="nav-circle-btn" id="drawer-theme-toggle" title="Switch Theme" aria-label="Toggle Theme">
+        <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+        </svg>
+      </button>
+      <a href="wishlist.html" class="nav-circle-btn" title="Saved Favorites" aria-label="View Wishlist">
+        <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
+        </svg>
+        <span class="nav-badge">5</span>
+      </a>
+      <a href="cart.html" class="nav-circle-btn" title="View Basket" aria-label="View Shopping Basket">
+        <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path>
+          <line x1="3" y1="6" x2="21" y2="6"></line>
+          <path d="M16 10a4 4 0 0 1-8 0"></path>
+        </svg>
+        <span class="nav-badge cart-badge">3</span>
+      </a>
+    </div>
+
+    <nav class="drawer-links">
+      <div class="drawer-link-group">
+        <span class="drawer-link">
+          Home
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"></polyline></svg>
+        </span>
+        <div class="drawer-sublinks">
+          <a href="index.html" class="drawer-sublink">Home 1 (Farm &amp; Market)</a>
+          <a href="home-2.html" class="drawer-sublink">Home 2 (Winter Lodge)</a>
+        </div>
+      </div>
+      <a href="products.html" class="drawer-link">Products</a>
+      <a href="visit-farm.html" class="drawer-link">Visit the Farm</a>
+      <a href="delivery-setup.html" class="drawer-link">Delivery &amp; Setup</a>
+      <a href="about.html" class="drawer-link">About</a>
+      <a href="contact.html" class="drawer-link">Contact</a>
+      <div style="display:flex; gap:10px; margin-top:10px; padding:4px 0;">
+        <a href="login.html" class="nav-pill-btn nav-login-pill" style="flex:1; text-align:center;">Login</a>
+        <a href="register.html" class="nav-pill-btn nav-signup-pill" style="flex:1; text-align:center;">Sign Up</a>
+      </div>
+    </nav>
+
+    <div class="drawer-footer">
+      <div style="font-size:0.8rem; color:var(--text-muted); text-align:center; padding: 4px 0;">
+        🌲 Open Daily 9 AM – 7 PM • 📞 (555) 789-2425
+      </div>
+    </div>
+  </aside>
+
+  <!-- Main Content Flow -->
+  <main id="main-content">
+
+    <!-- ==========================================================================
+         SECTION 1: HERO (Standardized Inner Page Height)
+         ========================================================================== -->
+    <section class="prod-hero-section page-hero-section" id="hero">
+      <img src="assets/images/products/products-hero.jpg" alt="Snow-covered Christmas tree farm at dawn" class="prod-hero-bg">
+      <div class="prod-hero-overlay"></div>
+
+      <div class="container">
+        <div class="prod-hero-content">
+          <!-- Breadcrumbs -->
+          <div class="prod-breadcrumb">
+            <a href="index.html">Home</a>
+            <span class="prod-breadcrumb-sep">/</span>
+            <span>Saved Wishlist</span>
+          </div>
+
+          <!-- Page Title -->
+          <h1 class="prod-hero-title">My Holiday Wishlist</h1>
+
+          <!-- Page Subtitle -->
+          <p class="prod-hero-subtitle">
+            Review your favorite hand-selected evergreens, artisan holiday wreaths, and festive accessories. Tag your tree online or transfer items directly to your harvest order.
+          </p>
+
+          <!-- Badges Strip -->
+          <div class="prod-hero-badges">
+            <div class="prod-hero-badge">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
+              </svg>
+              <span id="wishlist-total-count">5 Items Saved</span>
+            </div>
+            <div class="prod-hero-badge">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                <circle cx="12" cy="12" r="10"></circle>
+                <polyline points="12 6 12 12 16 14"></polyline>
+              </svg>
+              <span>48-Hour Reservation Tag Hold</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         SECTION 2: WISHLIST ITEMS GRID & CONTROLS
+         ========================================================================== -->
+    <section class="prod-section bg-alt" id="wishlist-items-section">
+      <div class="container">
+        
+        <!-- Action Summary Bar -->
+        <div class="wishlist-bar">
+          <div class="wishlist-count-text">
+            <span id="wishlist-display-count">5</span> Holiday Items Ready for Harvest
+          </div>
+          <div class="wishlist-bar-actions">
+            <button class="btn btn-outline btn-sm" onclick="shareWishlist()">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <circle cx="18" cy="5" r="3"></circle>
+                <circle cx="6" cy="12" r="3"></circle>
+                <circle cx="18" cy="19" r="3"></circle>
+                <line x1="8.59" y1="13.51" x2="15.42" y2="17.49"></line>
+                <line x1="15.41" y1="6.51" x2="8.59" y2="10.49"></line>
+              </svg>
+              <span>Share Wishlist</span>
+            </button>
+            <button class="btn btn-caramel btn-sm" onclick="addAllToCart()">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path>
+                <line x1="3" y1="6" x2="21" y2="6"></line>
+                <path d="M16 10a4 4 0 0 1-8 0"></path>
+              </svg>
+              <span>Add All to Cart</span>
+            </button>
+            <button class="btn btn-outline btn-sm" style="color: var(--holiday-burgundy); border-color: rgba(158, 38, 56, 0.4);" onclick="clearWishlist()">
+              <span>Clear List</span>
+            </button>
+          </div>
+        </div>
+
+        <!-- 5 Saved Wishlist Cards -->
+        <div class="wishlist-grid" id="wishlist-cards-container">
+          
+          <!-- Card 1: Fraser Fir -->
+          <article class="wishlist-card" id="wishlist-card-1">
+            <div class="wishlist-media">
+              <img src="assets/images/products/tree-fraser-fir.jpg" alt="Premium Fraser Fir Christmas Tree" loading="lazy">
+              <button class="wishlist-remove-btn" title="Remove from wishlist" aria-label="Remove item" onclick="removeWishlistItem('wishlist-card-1')">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                  <line x1="18" y1="6" x2="6" y2="18"></line>
+                  <line x1="6" y1="6" x2="18" y2="18"></line>
+                </svg>
+              </button>
+            </div>
+            <div class="wishlist-body">
+              <div class="wishlist-tag">Fresh Cut Farm Favorite</div>
+              <h3 class="wishlist-title"><a href="products.html">Premium Fraser Fir (7–8 ft)</a></h3>
+              <p style="font-size: 0.84rem; color: var(--text-muted); line-height: 1.5; margin-bottom: 12px;">
+                Sturdy upright boughs with silvery-green needles. Ideal for heavy family ornaments and lasting needle retention.
+              </p>
+              <div class="wishlist-price-row">
+                <div class="wishlist-price">$115.00</div>
+                <div class="wishlist-stock">✓ In Stock &bull; Fresh Cut</div>
+              </div>
+              <button class="btn btn-forest btn-sm wishlist-btn-add" onclick="moveItemToCart('wishlist-card-1', 'Premium Fraser Fir (7–8 ft)', 115.00)">
+                <span>Move to Cart &rarr;</span>
+              </button>
+            </div>
+          </article>
+
+          <!-- Card 2: Mountain Berry Wreath -->
+          <article class="wishlist-card" id="wishlist-card-2">
+            <div class="wishlist-media">
+              <img src="assets/images/products/wreath-berry.jpg" alt="Handcrafted Mountain Berry Holiday Wreath" loading="lazy">
+              <button class="wishlist-remove-btn" title="Remove from wishlist" aria-label="Remove item" onclick="removeWishlistItem('wishlist-card-2')">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                  <line x1="18" y1="6" x2="6" y2="18"></line>
+                  <line x1="6" y1="6" x2="18" y2="18"></line>
+                </svg>
+              </button>
+            </div>
+            <div class="wishlist-body">
+              <div class="wishlist-tag">Handmade at Barn</div>
+              <h3 class="wishlist-title"><a href="products.html">Mountain Berry Noble Wreath (24")</a></h3>
+              <p style="font-size: 0.84rem; color: var(--text-muted); line-height: 1.5; margin-bottom: 12px;">
+                Freshly woven fragrant cedar base accented with real juniper berries, sugar pinecones, and weather-resistant velvet bow.
+              </p>
+              <div class="wishlist-price-row">
+                <div class="wishlist-price">$48.00</div>
+                <div class="wishlist-stock">✓ In Stock &bull; Woven Daily</div>
+              </div>
+              <button class="btn btn-forest btn-sm wishlist-btn-add" onclick="moveItemToCart('wishlist-card-2', 'Mountain Berry Noble Wreath (24&quot;)', 48.00)">
+                <span>Move to Cart &rarr;</span>
+              </button>
+            </div>
+          </article>
+
+          <!-- Card 3: Heavy-Duty Cast-Iron Stand -->
+          <article class="wishlist-card" id="wishlist-card-3">
+            <div class="wishlist-media">
+              <img src="assets/images/products/decor-stand.jpg" alt="Cast Iron Heavy Duty Tree Stand" loading="lazy">
+              <button class="wishlist-remove-btn" title="Remove from wishlist" aria-label="Remove item" onclick="removeWishlistItem('wishlist-card-3')">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                  <line x1="18" y1="6" x2="6" y2="18"></line>
+                  <line x1="6" y1="6" x2="18" y2="18"></line>
+                </svg>
+              </button>
+            </div>
+            <div class="wishlist-body">
+              <div class="wishlist-tag">Lifetime Hardware</div>
+              <h3 class="wishlist-title"><a href="products.html">Cast-Iron Reservoir Stand (Large)</a></h3>
+              <p style="font-size: 0.84rem; color: var(--text-muted); line-height: 1.5; margin-bottom: 12px;">
+                Solid rust-proof green enamel hardware holding 2.0 gallons of water. Supports trees up to 10 feet tall securely.
+              </p>
+              <div class="wishlist-price-row">
+                <div class="wishlist-price">$62.00</div>
+                <div class="wishlist-stock">✓ In Stock &bull; Hardware Barn</div>
+              </div>
+              <button class="btn btn-forest btn-sm wishlist-btn-add" onclick="moveItemToCart('wishlist-card-3', 'Cast-Iron Reservoir Stand (Large)', 62.00)">
+                <span>Move to Cart &rarr;</span>
+              </button>
+            </div>
+          </article>
+
+          <!-- Card 4: Pacific Blue Spruce -->
+          <article class="wishlist-card" id="wishlist-card-4">
+            <div class="wishlist-media">
+              <img src="assets/images/products/tree-blue-spruce.jpg" alt="Pacific Blue Spruce Christmas Tree" loading="lazy">
+              <button class="wishlist-remove-btn" title="Remove from wishlist" aria-label="Remove item" onclick="removeWishlistItem('wishlist-card-4')">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                  <line x1="18" y1="6" x2="6" y2="18"></line>
+                  <line x1="6" y1="6" x2="18" y2="18"></line>
+                </svg>
+              </button>
+            </div>
+            <div class="wishlist-body">
+              <div class="wishlist-tag">Silvery-Blue Needles</div>
+              <h3 class="wishlist-title"><a href="products.html">Pacific Blue Spruce (8–9 ft)</a></h3>
+              <p style="font-size: 0.84rem; color: var(--text-muted); line-height: 1.5; margin-bottom: 12px;">
+                Stately pyramidal silhouette with breathtaking frosted silvery foliage and rigid needle structure.
+              </p>
+              <div class="wishlist-price-row">
+                <div class="wishlist-price">$145.00</div>
+                <div class="wishlist-stock" style="color: var(--caramel-gold);">⚡ Only 4 Left in Field</div>
+              </div>
+              <button class="btn btn-forest btn-sm wishlist-btn-add" onclick="moveItemToCart('wishlist-card-4', 'Pacific Blue Spruce (8–9 ft)', 145.00)">
+                <span>Move to Cart &rarr;</span>
+              </button>
+            </div>
+          </article>
+
+          <!-- Card 5: Western Cedar Garland -->
+          <article class="wishlist-card" id="wishlist-card-5">
+            <div class="wishlist-media">
+              <img src="assets/images/products/garland-cedar.jpg" alt="Fresh Western Cedar and Eucalyptus Garland" loading="lazy">
+              <button class="wishlist-remove-btn" title="Remove from wishlist" aria-label="Remove item" onclick="removeWishlistItem('wishlist-card-5')">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                  <line x1="18" y1="6" x2="6" y2="18"></line>
+                  <line x1="6" y1="6" x2="18" y2="18"></line>
+                </svg>
+              </button>
+            </div>
+            <div class="wishlist-body">
+              <div class="wishlist-tag">Living Garland</div>
+              <h3 class="wishlist-title"><a href="products.html">Western Cedar Garland (15 ft)</a></h3>
+              <p style="font-size: 0.84rem; color: var(--text-muted); line-height: 1.5; margin-bottom: 12px;">
+                Dense hand-twined boughs designed for mantle, staircase banisters, and exterior doorways. Unmatched pine fragrance.
+              </p>
+              <div class="wishlist-price-row">
+                <div class="wishlist-price">$54.00</div>
+                <div class="wishlist-stock">✓ In Stock &bull; Cut to Order</div>
+              </div>
+              <button class="btn btn-forest btn-sm wishlist-btn-add" onclick="moveItemToCart('wishlist-card-5', 'Western Cedar Garland (15 ft)', 54.00)">
+                <span>Move to Cart &rarr;</span>
+              </button>
+            </div>
+          </article>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         SECTION 3: WISHLIST PERKS & RESERVATION GUARANTEE
+         ========================================================================== -->
+    <section class="prod-section" id="perks">
+      <div class="container">
+        <div class="section-header">
+          <span class="eyebrow">The Pinecrest Promise</span>
+          <h2 class="section-title">Why Reserve Your Tree on Wishlist?</h2>
+          <p class="section-subtitle">
+            Take the stress out of holiday planning with free reservation holds and white-glove harvest preparation.
+          </p>
+        </div>
+
+        <div class="visit-info-strip-grid">
+          <div class="visit-info-box">
+            <h3 class="visit-info-title">48-Hour Tag Hold</h3>
+            <p class="visit-info-text">
+              Saved items are tagged in our inventory for 48 hours without upfront payment, allowing your family to coordinate harvest dates.
+            </p>
+          </div>
+          <div class="visit-info-box">
+            <h3 class="visit-info-title">Free Netting &amp; Twine</h3>
+            <p class="visit-info-text">
+              Every wishlist tree harvested on the farm receives free shaker cleaning, mechanical protective netting, and vehicle tie-down.
+            </p>
+          </div>
+          <div class="visit-info-box">
+            <h3 class="visit-info-title">Freshness Past New Year's</h3>
+            <p class="visit-info-text">
+              Grown in high-altitude volcanic soils for superior needle retention. Guaranteed fresh aroma throughout your entire holiday season.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         SECTION 4: RECOMMENDATIONS (You May Also Love)
+         ========================================================================== -->
+    <section class="prod-section bg-alt" id="recommendations">
+      <div class="container">
+        <div class="section-header">
+          <span class="eyebrow">Complete Your Display</span>
+          <h2 class="section-title">Recommended Holiday Accents</h2>
+          <p class="section-subtitle">
+            Frequently paired with your saved trees for an effortless, picture-perfect living room centerpiece.
+          </p>
+        </div>
+
+        <div class="wishlist-grid">
+          <div class="wishlist-card">
+            <div class="wishlist-media">
+              <img src="assets/images/products/decor-lights.jpg" alt="Warm Glow LED Micro Fairy Lights" loading="lazy">
+            </div>
+            <div class="wishlist-body">
+              <div class="wishlist-tag">Lighting</div>
+              <h3 class="wishlist-title"><a href="products.html">Warm Glow LED Fairy Lights (500ct)</a></h3>
+              <div class="wishlist-price-row">
+                <div class="wishlist-price">$24.00</div>
+                <div class="wishlist-stock">✓ Ready to Ship</div>
+              </div>
+              <button class="btn btn-forest btn-sm wishlist-btn-add" onclick="moveItemToCart('rec-1', 'Warm Glow LED Fairy Lights', 24.00)">
+                <span>+ Quick Add to Cart</span>
+              </button>
+            </div>
+          </div>
+
+          <div class="wishlist-card">
+            <div class="wishlist-media">
+              <img src="assets/images/products/decor-skirt.jpg" alt="Quilted Natural Linen Tree Skirt" loading="lazy">
+            </div>
+            <div class="wishlist-body">
+              <div class="wishlist-tag">Accessories</div>
+              <h3 class="wishlist-title"><a href="products.html">Quilted Linen Tree Skirt (48")</a></h3>
+              <div class="wishlist-price-row">
+                <div class="wishlist-price">$36.00</div>
+                <div class="wishlist-stock">✓ Ready to Ship</div>
+              </div>
+              <button class="btn btn-forest btn-sm wishlist-btn-add" onclick="moveItemToCart('rec-2', 'Quilted Linen Tree Skirt', 36.00)">
+                <span>+ Quick Add to Cart</span>
+              </button>
+            </div>
+          </div>
+
+          <div class="wishlist-card">
+            <div class="wishlist-media">
+              <img src="assets/images/products/decor-topper.jpg" alt="Handcrafted Brass Star Tree Topper" loading="lazy">
+            </div>
+            <div class="wishlist-body">
+              <div class="wishlist-tag">Tree Toppers</div>
+              <h3 class="wishlist-title"><a href="products.html">Handcrafted Brass Star Topper</a></h3>
+              <div class="wishlist-price-row">
+                <div class="wishlist-price">$28.00</div>
+                <div class="wishlist-stock">✓ Ready to Ship</div>
+              </div>
+              <button class="btn btn-forest btn-sm wishlist-btn-add" onclick="moveItemToCart('rec-3', 'Handcrafted Brass Star Topper', 28.00)">
+                <span>+ Quick Add to Cart</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         SECTION 5: FINAL CTA
+         ========================================================================== -->
+    <section class="prod-shopping-cta-section" id="support">
+      <img src="assets/images/products/products-cta.jpg" alt="Father and daughter tying Christmas tree to car roof" class="prod-cta-bg-image">
+      <div class="prod-cta-overlay"></div>
+
+      <div class="container">
+        <div class="prod-cta-inner" style="grid-template-columns: 1fr; text-align: center; max-width: 780px; margin: 0 auto;">
+          <div>
+            <span class="eyebrow" style="color: #F8D38D; font-weight: 800; letter-spacing: 0.1em; text-transform: uppercase; text-shadow: 0 1px 3px rgba(0,0,0,0.5);">Ready to Harvest?</span>
+            <h2 class="prod-cta-title" style="margin-bottom: 16px;">Bring Your Wishlist to Life at the Farm</h2>
+            <p class="prod-cta-desc" style="margin-bottom: 32px;">
+              Visit us 7 days a week from mid-November through Christmas Eve or arrange white-glove delivery directly to your fireplace.
+            </p>
+
+            <div style="display: flex; justify-content: center; gap: 16px; flex-wrap: wrap;">
+              <a href="cart.html" class="btn btn-caramel btn-arrow" style="padding: 14px 32px;">
+                <span>View Shopping Cart &rarr;</span>
+              </a>
+              <a href="visit-farm.html" class="btn btn-outline" style="padding: 14px 32px;">
+                <span>Plan Your Farm Visit</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ==========================================================================
+       FOOTER
+       ========================================================================== -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-col footer-col-brand">
+          <a href="index.html" class="brand-logo footer-logo" style="margin-bottom:12px;"
+            aria-label="Pinecrest Meadows">
+            <div class="brand-emblem" aria-hidden="true">
+              <svg width="40" height="40" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M 6 30 A 18 18 0 1 1 42 30" stroke="#D4A359" stroke-width="2.2" stroke-linecap="round"
+                  fill="none" />
+                <path d="M 18 7 L 13 15 L 23 15 Z" fill="#D4A359" />
+                <path d="M 18 13 L 11 21 L 25 21 Z" fill="#D4A359" />
+                <path d="M 18 19 L 9 28 L 27 28 Z" fill="#D4A359" />
+                <rect x="16.5" y="28" width="3" height="3" fill="#A27129" />
+                <path d="M 31 15 L 27 20 L 35 20 Z" fill="#D4A359" />
+                <path d="M 31 19 L 25 25 L 37 25 Z" fill="#D4A359" />
+                <path d="M 31 23 L 24 30 L 38 30 Z" fill="#D4A359" />
+                <rect x="30" y="30" width="2" height="2" fill="#A27129" />
+                <path d="M 4 32 C 14 30, 24 35, 44 32" stroke="#D4A359" stroke-width="2" stroke-linecap="round"
+                  fill="none" />
+                <path d="M 6 36 C 16 34, 26 39, 42 36" stroke="#245132" stroke-width="1.8" stroke-linecap="round"
+                  fill="none" />
+              </svg>
+            </div>
+            <div class="brand-text">
+              <div class="brand-name">
+                Pinecrest Meadow<span class="brand-leaf-wrap">s<svg class="brand-leaf-icon" viewBox="0 0 20 20"
+                    fill="currentColor">
+                    <path d="M3 17 C 8 16, 17 12, 17 3 C 10 4, 4 9, 3 17 Z M 7 13 C 11 9, 14 6, 14 6" fill="#78B159" />
+                  </svg></span>
+              </div>
+              <div class="brand-tagline">
+                <span class="tagline-rule"></span>
+                <span class="tagline-text">TREE FARM &amp; MARKET</span>
+                <span class="tagline-rule"></span>
+              </div>
+            </div>
+          </a>
+          <p class="footer-desc">
+            Cultivating holiday memories since 1984. Sustainably grown mountain evergreens, handmade wreaths, and
+            festive seasonal cheer.
+          </p>
+          <div class="footer-socials">
+            <a href="#instagram" class="social-icon" aria-label="Follow us on Instagram">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round">
+                <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+              </svg>
+            </a>
+            <a href="#facebook" class="social-icon" aria-label="Follow us on Facebook">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round">
+                <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
+              </svg>
+            </a>
+            <a href="#pinterest" class="social-icon" aria-label="Follow us on Pinterest">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round">
+                <line x1="12" y1="5" x2="12" y2="19"></line>
+                <polyline points="19 12 12 19 5 12"></polyline>
+              </svg>
+            </a>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h4 class="footer-col-title">Shop Collection</h4>
+          <ul class="footer-links">
+            <li><a href="products.html#trees">Fresh Christmas Trees</a></li>
+            <li><a href="products.html#wreaths">Botanical Wreaths</a></li>
+            <li><a href="products.html#wreaths">Cascading Garlands</a></li>
+            <li><a href="products.html#decor">Heirloom Ornaments</a></li>
+            <li><a href="products.html#decor">Cast Iron Tree Stands</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4 class="footer-col-title">Farm Experience</h4>
+          <ul class="footer-links">
+            <li><a href="visit-farm.html#experience">Cut-Your-Own Harvest</a></li>
+            <li><a href="visit-farm.html#hours">Seasonal Opening Hours</a></li>
+            <li><a href="visit-farm.html#expect">Wagon Rides &amp; Bonfires</a></li>
+            <li><a href="home-2.html">Holiday Lodge Boutique</a></li>
+            <li><a href="delivery-setup.html">Delivery &amp; Setup</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4 class="footer-col-title">Farm Hours &amp; Location</h4>
+          <p class="footer-contact-item">
+            <strong>Pinecrest Meadows Farm</strong><br>
+            742 Evergreen Valley Way<br>
+            Cascades, OR 97401
+          </p>
+          <p class="footer-contact-item" style="margin-top: 10px;">
+            <strong>Opening Hours:</strong><br>
+            Mon – Sun: 9:00 AM – 7:00 PM<br>
+            Phone: (800) 555-PINE
+          </p>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 Pinecrest Meadows Tree Farm &amp; Market. All rights reserved.</p>
+        <div class="footer-bottom-links">
+          <a href="contact.html">Privacy Policy</a>
+          <a href="contact.html">Terms of Service</a>
+          <a href="delivery-setup.html">Shipping &amp; Delivery</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Back to Top Floating Button -->
+  <button class="back-to-top" id="back-to-top" aria-label="Scroll back to top" title="Back to top">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+      stroke-linecap="round" stroke-linejoin="round">
+      <line x1="12" y1="19" x2="12" y2="5"></line>
+      <polyline points="5 12 12 5 19 12"></polyline>
+    </svg>
+  </button>
+
+  <!-- Notification Toast Container -->
+  <div id="toast-container"></div>
+
+  <!-- Scripts -->
+  <script src="assets/js/main.js"></script>
+  <script>
+    function showToast(msg) {
+      if (window.showToast && window.showToast !== showToast) {
+        window.showToast(msg);
+        return;
+      }
+      const container = document.getElementById('toast-container');
+      const toast = document.createElement('div');
+      toast.innerHTML = '<span>' + msg + '</span>';
+      container.appendChild(toast);
+      setTimeout(() => { toast.style.opacity = '0'; toast.style.transition = 'opacity 0.4s ease'; setTimeout(() => toast.remove(), 400); }, 3000);
+    }
+
+    function removeWishlistItem(cardId) {
+      const card = document.getElementById(cardId);
+      if (card) {
+        const titleEl = card.querySelector('.wishlist-title');
+        const title = titleEl ? titleEl.textContent.trim() : '';
+        const list = window.getWishlist();
+        const idx = list.findIndex(it => (typeof it === 'string' ? it : (it.title || '')).toLowerCase() === title.toLowerCase());
+        if (idx > -1) {
+          list.splice(idx, 1);
+          window.saveWishlist(list);
+        }
+        card.style.opacity = '0';
+        card.style.transform = 'scale(0.9)';
+        card.style.transition = 'all 0.3s ease';
+        setTimeout(() => {
+          card.remove();
+          updateWishlistCounts();
+          showToast('Item removed from your wishlist.');
+        }, 300);
+      }
+    }
+
+    function moveItemToCart(cardId, itemName, price) {
+      removeWishlistItem(cardId);
+      window.addToCart(itemName, price);
+    }
+
+    function addAllToCart() {
+      const cards = document.querySelectorAll('#wishlist-cards-container .wishlist-card');
+      const count = cards.length;
+      if (count === 0) {
+        showToast('Your wishlist is already empty!');
+        return;
+      }
+      
+      const items = [
+        { name: 'Premium Fraser Fir (7–8 ft)', price: 115, img: 'assets/images/products/tree-fraser-fir.jpg' },
+        { name: 'Mountain Berry Noble Wreath (24")', price: 48, img: 'assets/images/products/wreath-berry.jpg' },
+        { name: 'Grand Cascade Douglas Fir (9–10 ft)', price: 168, img: 'assets/images/products/tree-douglas-fir.jpg' },
+        { name: 'Pacific Blue Spruce (8–9 ft)', price: 145, img: 'assets/images/products/tree-balsam-fir.jpg' },
+        { name: 'Western Cedar Garland (15 ft)', price: 54, img: 'assets/images/products/garland-cedar.jpg' }
+      ];
+      items.forEach(it => window.addToCart(it.name, it.price, it.img));
+      window.saveWishlist([]);
+      document.getElementById('wishlist-cards-container').innerHTML = '<div style="grid-column: 1 / -1; text-align: center; padding: 60px 20px; background: var(--bg-card); border-radius: var(--radius-lg); border: 1px solid var(--card-border);"><h3 style="font-family: var(--font-heading); font-size: 1.6rem; color: var(--text-heading); margin-bottom: 8px;">All Items Added to Cart!</h3><p style="color: var(--text-muted); margin-bottom: 24px;">Your saved items are now in your shopping cart ready for checkout or farm pickup reservation.</p><a href="cart.html" class="btn btn-caramel">Proceed to Shopping Cart &rarr;</a></div>';
+      updateWishlistCounts(0);
+      showToast('All ' + count + ' items transferred to your cart!');
+    }
+
+    function clearWishlist() {
+      if (confirm('Are you sure you want to clear your entire wishlist?')) {
+        window.saveWishlist([]);
+        document.getElementById('wishlist-cards-container').innerHTML = '<div style="grid-column: 1 / -1; text-align: center; padding: 60px 20px; background: var(--bg-card); border-radius: var(--radius-lg); border: 1px solid var(--card-border);"><h3 style="font-family: var(--font-heading); font-size: 1.6rem; color: var(--text-heading); margin-bottom: 8px;">Your Wishlist is Empty</h3><p style="color: var(--text-muted); margin-bottom: 24px;">Browse our catalog of fragrant Oregon evergreens and handcrafted holiday wreaths to save your favorites.</p><a href="products.html" class="btn btn-caramel">Browse Products Catalog &rarr;</a></div>';
+        updateWishlistCounts(0);
+        showToast('Wishlist cleared.');
+      }
+    }
+
+    function shareWishlist() {
+      navigator.clipboard.writeText(window.location.href);
+      showToast('Wishlist share link copied to clipboard!');
+    }
+
+    function updateWishlistCounts(override) {
+      const remaining = override !== undefined ? override : document.querySelectorAll('#wishlist-cards-container .wishlist-card').length;
+      const countSpan = document.getElementById('wishlist-display-count');
+      const totalSpan = document.getElementById('wishlist-total-count');
+      const badge = document.getElementById('wishlist-count-badge');
+      if (countSpan) countSpan.textContent = remaining;
+      if (totalSpan) totalSpan.textContent = remaining + ' Items Saved';
+      if (badge) badge.textContent = remaining;
+    }
+  </script>
+</body>
+</html>

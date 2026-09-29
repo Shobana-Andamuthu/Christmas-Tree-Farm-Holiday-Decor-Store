@@ -1,0 +1,36 @@
+<svg width="64" height="64" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="favGold" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#F6D799" />
+      <stop offset="50%" stop-color="#D4A359" />
+      <stop offset="100%" stop-color="#A27129" />
+    </linearGradient>
+    <linearGradient id="favGreen" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#5B9760" />
+      <stop offset="100%" stop-color="#1A3C2B" />
+    </linearGradient>
+    <filter id="shadow" x="-10%" y="-10%" width="130%" height="130%">
+      <feDropShadow dx="0" dy="1" stdDeviation="1" flood-opacity="0.35"/>
+    </filter>
+  </defs>
+
+  <!-- Circular Arch Horizon -->
+  <path d="M 6 30 A 18 18 0 1 1 42 30" stroke="url(#favGold)" stroke-width="2.5" stroke-linecap="round" fill="none" filter="url(#shadow)" />
+  
+  <!-- Big Tree Left -->
+  <path d="M 18 7 L 13 15 L 23 15 Z" fill="url(#favGold)" />
+  <path d="M 18 13 L 11 21 L 25 21 Z" fill="url(#favGold)" />
+  <path d="M 18 19 L 9 28 L 27 28 Z" fill="url(#favGold)" />
+  <rect x="16.5" y="28" width="3" height="3.5" fill="#A27129" />
+
+  <!-- Small Tree Right -->
+  <path d="M 31 15 L 27 20 L 35 20 Z" fill="url(#favGold)" />
+  <path d="M 31 19 L 25 25 L 37 25 Z" fill="url(#favGold)" />
+  <path d="M 31 23 L 24 30 L 38 30 Z" fill="url(#favGold)" />
+  <rect x="30" y="30" width="2" height="2.5" fill="#A27129" />
+
+  <!-- Sweeping Meadow Contours -->
+  <path d="M 4 32 C 14 30, 24 35, 44 32" stroke="url(#favGold)" stroke-width="2.2" stroke-linecap="round" fill="none" />
+  <path d="M 6 36 C 16 34, 26 39, 42 36" stroke="url(#favGreen)" stroke-width="2" stroke-linecap="round" fill="none" />
+  <path d="M 10 40 C 18 38, 28 42, 38 40" stroke="url(#favGreen)" stroke-width="1.6" stroke-linecap="round" fill="none" />
+</svg>
