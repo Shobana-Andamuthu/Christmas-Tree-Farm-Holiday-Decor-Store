@@ -470,7 +470,18 @@ document.addEventListener('DOMContentLoaded', () => {
         clearTimeout(btn._resetTimer);
       }
       btn.classList.add('in-cart');
-      btn.innerHTML = `<svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg> <span>Added</span>`;
+      
+      const isIconButton = btn.classList.contains('product-action-btn') || 
+                           btn.classList.contains('action-btn') || 
+                           btn.offsetWidth <= 48 || 
+                           (!btn.textContent.trim() && btn.querySelector('svg'));
+
+      if (isIconButton) {
+        btn.innerHTML = `<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>`;
+      } else {
+        btn.innerHTML = `<svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg> <span>Added</span>`;
+      }
+
       btn._resetTimer = setTimeout(() => {
         if (btn.dataset.originalHtml) {
           btn.innerHTML = btn.dataset.originalHtml;

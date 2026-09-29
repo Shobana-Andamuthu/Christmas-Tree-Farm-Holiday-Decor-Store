@@ -1287,11 +1287,11 @@ h1, h2, h3, h4, .font-serif {
 
 .drawer-footer {
   margin-top: auto;
-  padding-top: 24px;
+  padding-top: 18px;
   border-top: 1px solid var(--border-color);
   display: flex;
   flex-direction: column;
-  gap: 16px;
+  gap: 10px;
 }
 
 /* ==========================================================================
@@ -1656,6 +1656,13 @@ h1, h2, h3, h4, .font-serif {
   color: #FFFFFF;
   border-color: var(--forest-green);
   transform: scale(1.1);
+}
+
+.product-action-btn.in-cart {
+  background-color: var(--forest-green) !important;
+  color: #FFFFFF !important;
+  border-color: var(--forest-green) !important;
+  transform: scale(1.08);
 }
 
 .benefits-section {
@@ -2409,6 +2416,12 @@ h1, h2, h3, h4, .font-serif {
   flex-shrink: 0;
 }
 
+.variety-actions {
+  display: flex;
+  align-items: center;
+  margin-top: 4px;
+}
+
 /* H2 Best Sellers 4-Column Grid */
 .h2-bestsellers-grid {
   display: grid;
@@ -3050,6 +3063,10 @@ h1, h2, h3, h4, .font-serif {
   .reviews-spotlight-grid {
     grid-template-columns: 1fr;
   }
+  .featured-review-box,
+  .mini-review-card {
+    padding: 22px;
+  }
   .footer-top {
     grid-template-columns: 1fr 1fr;
   }
@@ -3066,6 +3083,21 @@ h1, h2, h3, h4, .font-serif {
   }
   .testimonials-grid {
     grid-template-columns: repeat(2, 1fr);
+  }
+  .variety-actions {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-top: 8px;
+  }
+  .variety-actions .btn,
+  .variety-details .h2-add-btn {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
   }
 }
 
@@ -3101,8 +3133,8 @@ h1, h2, h3, h4, .font-serif {
     grid-template-columns: 1fr;
   }
   .footer-top {
-    grid-template-columns: 1fr;
-    gap: 28px;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 36px 28px;
   }
   .newsletter-form {
     flex-direction: column;
@@ -3178,6 +3210,10 @@ h1, h2, h3, h4, .font-serif {
     width: 100%;
     justify-content: center;
     box-sizing: border-box;
+  }
+  .footer-top {
+    grid-template-columns: 1fr;
+    gap: 28px;
   }
   .footer-bottom {
     flex-direction: column;
@@ -3974,6 +4010,7 @@ h1, h2, h3, h4, .font-serif {
   color: var(--text-heading);
   font-weight: 700;
   margin-bottom: 8px;
+  text-align: center;
 }
 
 .prod-cta-box-desc {
@@ -3981,6 +4018,7 @@ h1, h2, h3, h4, .font-serif {
   color: var(--text-muted);
   margin-bottom: 20px;
   line-height: 1.5;
+  text-align: center;
 }
 
 .prod-concierge-form {
@@ -4929,9 +4967,17 @@ select:focus {
   display: flex;
   align-items: center;
   gap: 8px;
-  font-size: 0.85rem;
+  font-size: 0.84rem;
   font-weight: 600;
   color: var(--text-main);
+  min-width: 0;
+}
+
+.visit-exp-checkitem span {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  min-width: 0;
 }
 
 .visit-exp-checkitem svg {
@@ -5252,6 +5298,7 @@ select:focus {
   padding: clamp(24px, 4vw, 36px);
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
   gap: 20px;
 }
 
@@ -6407,21 +6454,30 @@ select:focus {
 
 .contact-map-badge {
   position: absolute;
-  bottom: 18px;
-  left: 18px;
-  background: rgba(22, 40, 30, 0.94);
-  backdrop-filter: blur(8px);
-  -webkit-backdrop-filter: blur(8px);
-  padding: 12px 18px;
-  border-radius: var(--radius-md);
-  border: 1px solid rgba(212, 163, 89, 0.4);
+  bottom: 24px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: rgba(18, 36, 26, 0.95);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  padding: 10px 14px 10px 22px;
+  border-radius: var(--radius-full);
+  border: 1px solid rgba(212, 163, 89, 0.45);
   color: #FFFFFF;
-  display: flex;
+  display: inline-flex;
   align-items: center;
-  gap: 14px;
+  gap: 16px;
   z-index: 2;
-  flex-wrap: wrap;
-  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.35);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.45);
+  white-space: nowrap;
+  max-width: calc(100% - 32px);
+  box-sizing: border-box;
+}
+
+[dir="rtl"] .contact-map-badge {
+  left: 50%;
+  right: auto;
+  transform: translateX(-50%);
 }
 
 .contact-map-status {
@@ -6443,32 +6499,31 @@ select:focus {
 }
 
 .contact-map-badge .btn {
-  padding: 8px 16px;
+  padding: 8px 18px;
   font-size: 0.82rem;
+  border-radius: var(--radius-full);
 }
 
 @media (max-width: 680px) {
   .contact-map-wrapper iframe {
-    height: 280px;
+    height: 300px;
   }
   .contact-map-badge {
-    position: relative;
-    bottom: auto;
-    left: auto;
-    right: auto;
-    top: auto;
+    position: static;
+    transform: none;
     border-radius: 0;
+    width: 100%;
+    max-width: 100%;
     border-top: 1.5px solid rgba(212, 163, 89, 0.35);
     border-left: none;
     border-right: none;
     border-bottom: none;
-    width: 100%;
-    box-sizing: border-box;
     justify-content: center;
     text-align: center;
     flex-direction: column;
     gap: 12px;
-    padding: 14px 16px;
+    padding: 16px;
+    white-space: normal;
   }
   .contact-map-badge .btn {
     width: 100%;
@@ -6520,10 +6575,42 @@ select:focus {
   background-color: var(--bg-card);
   border: 1px solid var(--card-border);
   border-radius: var(--radius-lg);
-  padding: clamp(20px, 2.5vw, 26px);
+  overflow: hidden;
   display: flex;
   flex-direction: column;
   box-shadow: var(--shadow-sm);
+  transition: all var(--transition-fast);
+}
+
+.visit-info-box:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-md);
+  border-color: var(--caramel-gold);
+}
+
+.visit-info-media {
+  width: 100%;
+  aspect-ratio: 16 / 10;
+  overflow: hidden;
+  background-color: var(--sage-subtle);
+}
+
+.visit-info-media img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform var(--transition-slow);
+}
+
+.visit-info-box:hover .visit-info-media img {
+  transform: scale(1.06);
+}
+
+.visit-info-body {
+  padding: clamp(20px, 2.5vw, 24px);
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
 }
 
 .visit-info-title {
@@ -6538,6 +6625,7 @@ select:focus {
   font-size: 0.86rem;
   color: var(--text-muted);
   line-height: 1.55;
+  margin: 0;
 }
 
 /* ==========================================================================
@@ -6813,6 +6901,7 @@ select:focus {
   text-transform: uppercase;
   margin-bottom: 10px;
   display: block;
+  text-align: center;
 }
 
 .auth-title {
@@ -6822,6 +6911,7 @@ select:focus {
   color: var(--text-heading);
   line-height: 1.12;
   margin-bottom: 12px;
+  text-align: center;
 }
 
 .auth-subtitle {
@@ -6829,6 +6919,7 @@ select:focus {
   color: var(--text-muted);
   line-height: 1.55;
   margin-bottom: 28px;
+  text-align: center;
 }
 
 .auth-form {
