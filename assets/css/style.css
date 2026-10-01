@@ -6808,6 +6808,55 @@ select:focus {
   gap: 16px;
 }
 
+/* High-Contrast Luxury Brand Badge on Auth Hero */
+.auth-image-top .brand-logo {
+  display: inline-flex;
+  align-items: center;
+  background: rgba(10, 24, 16, 0.68);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  padding: 8px 18px 8px 12px;
+  border-radius: var(--radius-full);
+  border: 1px solid rgba(255, 255, 255, 0.28);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.45);
+  transition: all var(--transition-fast);
+}
+
+.auth-image-top .brand-logo:hover {
+  background: rgba(10, 24, 16, 0.85);
+  border-color: #F8D38D;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.55), 0 0 16px rgba(248, 211, 141, 0.25);
+  transform: translateY(-2px);
+}
+
+.auth-image-top .brand-name {
+  color: #FFFFFF !important;
+  font-weight: 700 !important;
+  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.9) !important;
+}
+
+.auth-image-top .brand-tagline {
+  display: flex !important;
+  margin-top: 4px;
+  gap: 6px;
+  align-items: center;
+}
+
+.auth-image-top .tagline-rule {
+  background-color: #F8D38D !important;
+  opacity: 1 !important;
+  height: 1.5px !important;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.9) !important;
+}
+
+.auth-image-top .tagline-text {
+  color: #F8D38D !important;
+  font-weight: 800 !important;
+  letter-spacing: 0.24em !important;
+  text-shadow: 0 1px 4px rgba(0, 0, 0, 0.95), 0 2px 8px rgba(0, 0, 0, 0.85) !important;
+  font-size: clamp(0.58rem, 0.75vw, 0.66rem) !important;
+}
+
 .auth-image-brand {
   display: flex;
   align-items: center;
