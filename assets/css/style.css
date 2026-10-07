@@ -939,7 +939,7 @@ h1, h2, h3, h4, .font-serif {
   height: 40px;
   font-size: 0.9rem;
   font-weight: 700;
-  display: inline-flex;
+  display: inline-flex !important;
   align-items: center;
   justify-content: center;
   border-radius: var(--radius-full);
@@ -1326,15 +1326,26 @@ h1, h2, h3, h4, .font-serif {
   .nav-menu {
     display: none !important;
   }
+  .site-header .nav-actions .nav-circle-btn,
+  .site-header .nav-actions .nav-pill-btn,
+  .site-header .nav-actions .nav-login-pill,
+  .navbar .nav-actions .nav-circle-btn,
+  .navbar .nav-actions .nav-pill-btn,
+  .navbar .nav-actions .nav-login-pill {
+    display: none !important;
+  }
   .hamburger-btn {
     display: flex !important;
   }
 }
 
 @media (max-width: 768px) {
-  .nav-actions .nav-circle-btn,
-  .nav-actions .nav-pill-btn,
-  .nav-actions .nav-login-pill {
+  .site-header .nav-actions .nav-circle-btn,
+  .site-header .nav-actions .nav-pill-btn,
+  .site-header .nav-actions .nav-login-pill,
+  .navbar .nav-actions .nav-circle-btn,
+  .navbar .nav-actions .nav-pill-btn,
+  .navbar .nav-actions .nav-login-pill {
     display: none !important;
   }
   .hamburger-btn {
@@ -3039,10 +3050,18 @@ h1, h2, h3, h4, .font-serif {
 
 @media (max-width: 1120px) {
   .nav-menu {
-    display: none;
+    display: none !important;
+  }
+  .site-header .nav-actions .nav-circle-btn,
+  .site-header .nav-actions .nav-pill-btn,
+  .site-header .nav-actions .nav-login-pill,
+  .navbar .nav-actions .nav-circle-btn,
+  .navbar .nav-actions .nav-pill-btn,
+  .navbar .nav-actions .nav-login-pill {
+    display: none !important;
   }
   .hamburger-btn {
-    display: flex;
+    display: flex !important;
   }
   .h2-hero-grid {
     grid-template-columns: 1fr;
